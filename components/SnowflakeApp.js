@@ -50,50 +50,46 @@ const emptyState = (): SnowflakeAppState => {
     name: '',
     title: '',
     milestoneByTrack: {
-      'MOBILE': 0,
-      'WEB_CLIENT': 0,
-      'FOUNDATIONS': 0,
-      'SERVERS': 0,
-      'PROJECT_MANAGEMENT': 0,
+      'IA': 0,
+      'VISUAL_DESIGN': 0,
+      'IXD': 0,
+      'TOOLSET': 0,
+      'SERVICE_DESIGN': 0,
+      'RESEARCH_ANALYTICS': 0,
+      'TECH_FLUENCY': 0,
+      'BIZ_FLUENCY': 0,
       'COMMUNICATION': 0,
-      'CRAFT': 0,
-      'INITIATIVE': 0,
-      'CAREER_DEVELOPMENT': 0,
-      'ORG_DESIGN': 0,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 0,
+      'FACILITATION': 0,
+      'GRIT': 0,
+      'EMPATHY': 0,
       'MENTORSHIP': 0,
-      'EVANGELISM': 0,
-      'RECRUITING': 0,
-      'COMMUNITY': 0
+      'EVANGELISM': 0
     },
-    focusedTrackId: 'MOBILE'
+    focusedTrackId: 'IA'
   }
 }
 
 const defaultState = (): SnowflakeAppState => {
   return {
-    name: 'Cersei Lannister',
-    title: 'Staff Engineer',
+    name: 'Craig Voltrus',
+    title: 'Staff Product Designer',
     milestoneByTrack: {
-      'MOBILE': 1,
-      'WEB_CLIENT': 2,
-      'FOUNDATIONS': 3,
-      'SERVERS': 2,
-      'PROJECT_MANAGEMENT': 4,
-      'COMMUNICATION': 1,
-      'CRAFT': 1,
-      'INITIATIVE': 4,
-      'CAREER_DEVELOPMENT': 3,
-      'ORG_DESIGN': 2,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 4,
-      'MENTORSHIP': 2,
-      'EVANGELISM': 2,
-      'RECRUITING': 3,
-      'COMMUNITY': 0
+      'IA': 3,
+      'VISUAL_DESIGN': 3,
+      'IXD': 3,
+      'TOOLSET': 4,
+      'SERVICE_DESIGN': 4,
+      'RESEARCH_ANALYTICS': 2,
+      'TECH_FLUENCY': 3,
+      'BIZ_FLUENCY': 4,
+      'COMMUNICATION': 3,
+      'FACILITATION': 3,
+      'GRIT': 4,
+      'EMPATHY': 4,
+      'MENTORSHIP': 3,
+      'EVANGELISM': 1
     },
-    focusedTrackId: 'MOBILE'
+    focusedTrackId: 'IA'
   }
 }
 
@@ -145,9 +141,11 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             font-weight: bold;
             width: 380px;
             margin-bottom: 10px;
+            border-bottom: 2px solid #ccc;
           }
           .name-input:hover, .name-input:focus {
-            border-bottom: 2px solid #ccc;
+            border-bottom: 2px solid #0000ff;
+            background-color: #fafafa;
             outline: 0;
           }
           a {
@@ -155,10 +153,8 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             text-decoration: none;
           }
         `}</style>
-        <div style={{margin: '19px auto 0', width: 142}}>
-          <a href="https://medium.com/" target="_blank">
-            <Wordmark />
-          </a>
+        <div style={{margin: '19px auto 0', width: 450, textAlign: 'center'}}>
+          <h1>Designer Skills Assessment</h1>
         </div>
         <div style={{display: 'flex'}}>
           <div style={{flex: 1}}>
@@ -200,11 +196,9 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
         <div style={{display: 'flex', paddingBottom: '20px'}}>
           <div style={{flex: 1}}>
-            Made with ❤️ by <a href="https://medium.engineering" target="_blank">Medium Eng</a>.
-            Learn about the <a href="https://medium.com/s/engineering-growth-framework" target="_blank">this version of our growth framework</a>
-            {' '}and <a href="https://medium.engineering/engineering-growth-at-medium-4935b3234d25" target="_blank">what we do currently</a>.
-            Get the <a href="https://github.com/Medium/snowflake" target="_blank">source code</a>.
-            Read the <a href="https://medium.com/p/85e078bc15b7" target="_blank">terms of service</a>.
+            Made by <a href="https://joesteinkamp.com" target="_blank">Joe Steinkamp</a>.
+            Learn about the <a href="https://docs.google.com/spreadsheets/d/1xUU5V-HZIm_pM9rYlRXHCYn8If2G5VgEW7I2x7m4ZUc/" target="_blank">Product Designer Levels Framework</a>.
+            Forked from <a href="https://github.com/Medium/snowflake" target="_blank">Medium's Snowflake app</a>.
           </div>
         </div>
       </main>

@@ -1,63 +1,54 @@
 // @flow
 import * as d3 from 'd3'
 
-export type TrackId = 'MOBILE' | 'WEB_CLIENT' | 'FOUNDATIONS' | 'SERVERS' |
-  'PROJECT_MANAGEMENT' | 'COMMUNICATION' | 'CRAFT' | 'INITIATIVE' |
-  'CAREER_DEVELOPMENT' | 'ORG_DESIGN' | 'WELLBEING' | 'ACCOMPLISHMENT' |
-  'MENTORSHIP' | 'EVANGELISM' | 'RECRUITING' | 'COMMUNITY'
-export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
+export type TrackId = 'IA' | 'VISUAL_DESIGN' | 'IXD' | 'TOOLSET' |
+  'SERVICE_DESIGN' | 'RESEARCH_ANALYTICS' | 'TECH_FLUENCY' | 'BIZ_FLUENCY' |
+  'COMMUNICATION' | 'FACILITATION' | 'WELLBEING' | 'ACCOMPLISHMENT' |
+  'MENTORSHIP' | 'EVANGELISM'
+export type Milestone = 0 | 1 | 2 | 3 | 4
 
 export type MilestoneMap = {
-  'MOBILE': Milestone,
-  'WEB_CLIENT': Milestone,
-  'FOUNDATIONS': Milestone,
-  'SERVERS': Milestone,
-  'PROJECT_MANAGEMENT': Milestone,
-  'COMMUNICATION': Milestone,
-  'CRAFT': Milestone,
-  'INITIATIVE': Milestone,
-  'CAREER_DEVELOPMENT': Milestone,
-  'ORG_DESIGN': Milestone,
-  'WELLBEING': Milestone,
-  'ACCOMPLISHMENT': Milestone,
+  'IA': Milestone,
+  'VISUAL_DESIGN': Milestone,
+  'IXD': Milestone,
+  'TOOLSET': Milestone,
+  'SERVICE_DESIGN': Milestone,
+  'RESEARCH_ANALYTICS': Milestone,
+  'TECH_FLUENCY': Milestone,
+  'BIZ_FLUENCY': Milestone,
+  'COMMUNICATION': Track,
+  'FACILITATION': Track,
+  'GRIT': Track,
+  'EMPATHY': Track,
   'MENTORSHIP': Milestone,
   'EVANGELISM': Milestone,
-  'RECRUITING': Milestone,
-  'COMMUNITY': Milestone
 }
-export const milestones = [0, 1, 2, 3, 4, 5]
+export const milestones = [0, 1, 2, 3, 4]
 
 export const milestoneToPoints = (milestone: Milestone): number => {
   switch (milestone) {
     case 0: return 0
     case 1: return 1
-    case 2: return 3
-    case 3: return 6
-    case 4: return 12
-    case 5: return 20
+    case 2: return 2
+    case 3: return 3
+    case 4: return 4
+    // case 5: return 20
     default: return 0
   }
 }
 
 export const pointsToLevels = {
-  '0': '1.1',
-  '5': '1.2',
-  '11': '1.3',
-  '17': '2.1',
-  '23': '2.2',
-  '29': '2.3',
-  '36': '3.1',
-  '43': '3.2',
-  '50': '3.3',
-  '58': '4.1',
-  '66': '4.2',
-  '74': '4.3',
-  '90': '5.1',
-  '110': '5.2',
-  '135': '5.3',
+  '0': '0',
+  '14': '1',
+  '20': '2',
+  '26': '3',
+  '35': '4',
+  '40': '5',
+  '46': '6',
+  '52': '7',
 }
 
-export const maxLevel = 135
+export const maxLevel = 56
 
 export type Track = {
   displayName: string,
@@ -71,94 +62,69 @@ export type Track = {
 }
 
 type Tracks = {|
-  'MOBILE': Track,
-  'WEB_CLIENT': Track,
-  'FOUNDATIONS': Track,
-  'SERVERS': Track,
-  'PROJECT_MANAGEMENT': Track,
+  'IA': Track,
+  'VISUAL_DESIGN': Track,
+  'IXD': Track,
+  'TOOLSET': Track,
+  'SERVICE_DESIGN': Track,
+  'RESEARCH_ANALYTICS': Track,
+  'TECH_FLUENCY': Track,
+  'BIZ_FLUENCY': Track,
   'COMMUNICATION': Track,
-  'CRAFT': Track,
-  'INITIATIVE': Track,
-  'CAREER_DEVELOPMENT': Track,
-  'ORG_DESIGN': Track,
-  'WELLBEING': Track,
-  'ACCOMPLISHMENT': Track,
+  'FACILITATION': Track,
+  'GRIT': Track,
+  'EMPATHY': Track,
   'MENTORSHIP': Track,
-  'EVANGELISM': Track,
-  'RECRUITING': Track,
-  'COMMUNITY': Track
+  'EVANGELISM': Track
 |}
 
 export const tracks: Tracks = {
-  "MOBILE": {
-    "displayName": "Mobile",
+  "IA": {
+    "displayName": "Information Architecture",
     "category": "A",
-    "description": "Develops expertise in native mobile platform engineering, such as iOS or Android",
+    "description": "Develops expertise in information architecture",
     "milestones": [{
-      "summary": "Works effectively within established iOS or Android architectures, following current best practices",
+      "summary": "Works effectively within established information architectures, following current best practices",
       "signals": [
         "Delivers features requiring simple local modifications",
-        "Adds simple actions that call server endpoints",
-        "Reuses existing components appropriately",
+        "Reuses existing taxonomy appropriately",
       ],
       "examples": [
-        "Added existing button to a different iOS surface",
-        "Add follow button for publications on Android",
-        "Fetched and displayed a new stream, using existing stream item styles",
+        "Adds new entries to existing taxonomy",
       ],
     }, {
-      "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
+      "summary": "Designs minor improvements to existing architecture",
       "signals": [
-        "Defines new useful and appropriate proto-generated objects",
-        "Creates simple new activities on Android",
-        "Migrates code from old patterns to new patterns",
+        "Improves objects in the existing taxonomy",
+        "Revises old information to adhere to new patterns",
       ],
       "examples": [
-        "Upgraded SDWebImage to a new major version",
-        "Added support for rendering a new type of stream item",
-        "Prototyped a simple new feature quickly",
+        "Revises nomenclature of existing aspects of a taxonomy",
       ],
     }, {
-      "summary": "Designs major new features and demonstrates a nuanced understanding of mobile platform constraints",
+      "summary": "Designs new aspects of existing architecture and demonstrates a nuanced understanding of the existing architecture",
       "signals": [
-        "Implements complex features with a large product surface area",
-        "Works effectively with  Android reactive programming framework",
-        "Adds support for new iOS features after a major iOS version upgrade",
+        "Defines new objects to expand an existing taxonomy",
       ],
       "examples": [
-        "Designed iOS caching strategy for offline reading",
-        "Built series reader on Android",
-        "Informed the team about recent best practice changes and deprecations",
+        "Added support for a new information type",
+        "Add new levels in the architecture",
       ],
     }, {
-      "summary": "Builds complex, reusable architectures that pioneer best practices and enable engineers to work more effectively",
+      "summary": "Designs complex, reusable architectures that pioneer best practices",
       "signals": [
-        "Pioneers architecture migration strategies that reduce programmer burden",
-        "Fixes subtle memory management issues",
-        "Implements interactive dismissals that bring delight",
+        "Pioneers new architecture and taxonomies",
+        "Strategy to transition from old patterns to new patterns",
       ],
       "examples": [
-        "Upgraded CocoaPods to a new major version",
-        "Designed architecture for fetching and rendering stream items",
-        "Migrated Android persistance layer to reactive programming",
-      ],
-    }, {
-      "summary": "Is an industry-leading expert in mobile engineering or sets strategic mobile direction for an eng team",
-      "signals": [
-        "Defines long-term goals and ensures active projects are in service of them",
-        "Designs and builds innovative, industry-leading UI interactions",
-        "Invents new techniques to responsibly stretch limits of the Android platform",
-      ],
-      "examples": [
-        "Defined and drove complete migration plan to Swift or Kotlin",
-        "Implemented Android recycler views before platform support existed",
-        "Pioneered application-level abstractions for multi-app environment",
+        "Define major upgrade to existing architecture",
+        "Successfully transitions from one taxonomy to another",
       ],
     }],
   },
 
-  "WEB_CLIENT": {
-    "displayName": "Web client",
+  "VISUAL_DESIGN": {
+    "displayName": "Visual Design",
     "category": "A",
     "description": "Develops expertise in web client technologies, such as HTML, CSS, and JavaScript",
     "milestones": [{
@@ -224,8 +190,8 @@ export const tracks: Tracks = {
     }],
   },
 
-  "FOUNDATIONS": {
-    "displayName": "Foundations",
+  "IXD": {
+    "displayName": "Interaction Design",
     "category": "A",
     "description": "Develops expertise in foundational systems, such as deployments, pipelines, databases and machine learning",
     "milestones": [{
@@ -291,8 +257,8 @@ export const tracks: Tracks = {
     }],
   },
 
-  "SERVERS": {
-    "displayName": "Servers",
+  "TOOLSET": {
+    "displayName": "Toolset Expertise",
     "category": "A",
     "description": "Develops expertise in server side engineering, using technologies such as Go, NodeJS, or Scala",
     "milestones": [{
@@ -358,9 +324,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "PROJECT_MANAGEMENT": {
-    "displayName": "Project management",
-    "category": "B",
+  "SERVICE_DESIGN": {
+    "displayName": "Service Design",
+    "category": "A",
     "description": "Delivers well-scoped programs of work that meet their goals, on time, to budget, harmoniously",
     "milestones": [{
       "summary": "Effectively delivers individual tasks",
@@ -425,9 +391,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "COMMUNICATION": {
-    "displayName": "Communication",
-    "category": "B",
+  "RESEARCH_ANALYTICS": {
+    "displayName": "Research &  Analytics",
+    "category": "A",
     "description": "Shares the right amount of information with the right people, at the right time, and listens effectively",
     "milestones": [{
       "summary": "Communicates effectively to close stakeholders when called upon, and incorporates constructive feedback",
@@ -492,9 +458,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "CRAFT": {
-    "displayName": "Craft",
-    "category": "B",
+  "TECH_FLUENCY": {
+    "displayName": "Technical Fluency",
+    "category": "A",
     "description": "Embodies and promotes practices to ensure excellent quality products and services",
     "milestones": [{
       "summary": "Delivers consistently good quality work",
@@ -559,9 +525,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "INITIATIVE": {
-    "displayName": "Initiative",
-    "category": "B",
+  "BIZ_FLUENCY": {
+    "displayName": "Business Fluency",
+    "category": "A",
     "description": "Challenges the status quo and effects positive organizational change outside of mandated work",
     "milestones": [{
       "summary": "Identifies opportunities for organizational change or product improvements",
@@ -626,9 +592,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "CAREER_DEVELOPMENT": {
-    "displayName": "Career development",
-    "category": "C",
+  "COMMUNICATION": {
+    "displayName": "Communication",
+    "category": "B",
     "description": "Provides strategic support to engineers to help them build the career they want",
     "milestones": [{
       "summary": "Gives insight into opportunities and helps identify individuals' strengths and weaknesses",
@@ -693,9 +659,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "ORG_DESIGN": {
-    "displayName": "Org design",
-    "category": "C",
+  "FACILITATION": {
+    "displayName": "Facilitation",
+    "category": "B",
     "description": "Defines processes and structures that enables the strong growth and execution of a diverse eng organization",
     "milestones": [{
       "summary": "Respects and participates in processes, giving meaningful feedback to help the organization improve",
@@ -760,9 +726,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "WELLBEING": {
-    "displayName": "Wellbeing",
-    "category": "C",
+  "GRIT": {
+    "displayName": "Grit",
+    "category": "B",
     "description": "Supports the emotional well-being of group members in difficult times, and celebrates their successes",
     "milestones": [{
       "summary": "Uses tools and processes to help ensure colleagues are healthy and happy",
@@ -827,9 +793,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "ACCOMPLISHMENT": {
-    "displayName": "Accomplishment",
-    "category": "C",
+  "EMPATHY": {
+    "displayName": "Empathy",
+    "category": "B",
     "description": "Inspires day to day excellence, maximises potential and effectively resolves performance issues with compassion",
     "milestones": [{
       "summary": "Helps individuals identify blockers and helps them identify next steps for resolution",
@@ -896,7 +862,7 @@ export const tracks: Tracks = {
 
   "MENTORSHIP": {
     "displayName": "Mentorship",
-    "category": "D",
+    "category": "C",
     "description": "Provides support to colleagues, spreads knowledge, and develops the team outside formal reporting structures",
     "milestones": [{
       "summary": "Informally mentors individuals in an ad-hoc way, supports new hires, and conveys institutional knowledge",
@@ -963,7 +929,7 @@ export const tracks: Tracks = {
 
   "EVANGELISM": {
     "displayName": "Evangelism",
-    "category": "D",
+    "category": "C",
     "description": "Promotes Medium to the outside world and establishes it as an attractive and thoughtful place to work",
     "milestones": [{
       "summary": "Represents Medium well externally, and influences individuals positively",
@@ -1026,141 +992,7 @@ export const tracks: Tracks = {
         "Represented Medium in national televised media",
       ],
     }],
-  },
-
-  "RECRUITING": {
-    "displayName": "Recruiting",
-    "category": "D",
-    "description": "Strengthens Medium's team by bringing in excellent staff members",
-    "milestones": [{
-      "summary": "Brings new candidates into the pipeline and understands how to evaluate candidates at Medium",
-      "signals": [
-        "Reviews existing network for hiring leads regularly",
-        "Shadows interviews to gain familiarity with process",
-        "Reviews current job postings regularly",
-      ],
-      "examples": [
-        "Completed interview calibration",
-        "Set up casual sessions to practice asking questions",
-        "Referred appropriate individuals for open positions",
-      ],
-    }, {
-      "summary": "Interviews regularly, helps the team make meaningful hiring decisions, and helps build a diverse pipeline",
-      "signals": [
-        "Uses interview rubric to provide clear, objective feedback on candidates",
-        "Interviews candidates with empathy and treats them all with equal respect",
-        "Researches approaches for sourcing candidates and diversifying hiring",
-      ],
-      "examples": [
-        "Added observable evidence for every rating",
-        "Started a monthly brunch for candidates to meet Medium employees",
-        "Tested a new service for quality and diversity of candidates",
-      ],
-    }, {
-      "summary": "Maintains and strengthens the integrity of the current process, and regularly brings in great candidates",
-      "signals": [
-        "Teaches new interviewers how to interview with empathy",
-        "Models great interview technique and feedback when shadowed",
-        "Reverse shadows trainees and helps calibrate their feedback",
-      ],
-      "examples": [
-        "Wrote new interview question which meets our question quality criteria",
-        "Brought candidates into our pipeline proactively, with a high conversion rate",
-        "Proposed useful, tangible improvements to the interview process",
-      ],
-    }, {
-      "summary": "Actively contributes to and leads hiring decisions, and goes to great lengths to source great candidates",
-      "signals": [
-        "Documents subtle cues in interviews that indicate values alignment",
-        "Makes hiring decisions, resolving discrepancies between conflicting reports",
-        "Top-grades candidates and teases out character traits",
-      ],
-      "examples": [
-        "Planned engineering summit on interview process and training",
-        "Organized and lead Medium's presence at a recruitment fair",
-        "Started CODE2040 internship program",
-      ],
-    }, {
-      "summary": "Sets recruitment strategy, invests in long-term relationships for critical roles, and recruits at scale",
-      "signals": [
-        "Sets the tone, policy and goals around building a diverse, high-quality team",
-        "Identifies and brings in promising acquisitions",
-        "Tracks industry activity, identifying opportunities for critical roles",
-      ],
-      "examples": [
-        "Talked with a senior candidate over many months to fill a critical role",
-        "Organized efforts around convincing acquired engineers to join and stay",
-        "Set goals, then tracked and reported metrics on team demographics over time",
-      ],
-    }],
-  },
-
-  "COMMUNITY": {
-    "displayName": "Community",
-    "category": "D",
-    "description": "Builds community internally, gives of themself to the team, and champions and extols company values",
-    "milestones": [{
-      "summary": "Is available and present on current teams, and works to contribute positively to company culture",
-      "signals": [
-        "Participates in team activities and offsites",
-        "Treats colleagues and clients with respect",
-        "Joins groups or committees outside regular duties",
-      ],
-      "examples": [
-        "Joined and actively participated in the web client guild",
-        "Brought a small gift back from vacation for the team",
-        "Wrote entertaining and informative Prod Ops writeups on Hatch",
-      ],
-    }, {
-      "summary": "Steps up, builds connectedness, and takes concrete actions to promote an inclusive culture",
-      "signals": [
-        "Makes space for others to participate",
-        "Collaborates with other engineers outside direct responsibilities",
-        "Finds ways to ramp up and engage new hires quickly",
-      ],
-      "examples": [
-        "Created onboarding bingo",
-        "Brought shy and introverted people into a dominant conversation",
-        "Volunteered as secretary for a team",
-      ],
-    }, {
-      "summary": "Contributes to improving team relatedness, and helps build a culture of lending support",
-      "signals": [
-        "Takes on additional Watch shifts at short notice",
-        "Pitches in to help other teams hit deadlines, without missing own deadlines",
-        "Uses position to raise difficult issues on someone's behalf",
-      ],
-      "examples": [
-        "Lead Watch cycles with little support while still contributing to projects",
-        "Started and drove the LGBTQIA ERG",
-        "Stayed positive and improved team morale during period after layoffs",
-      ],
-    }, {
-      "summary": "Exemplifies selflessness for the team without compromising responsibilities, and lifts everyone up",
-      "signals": [
-        "Goes above and beyond on the Watch, serving the team without complaint",
-        "Implements concrete programs to signficantly improve team inclusivity",
-        "Takes on large amounts of tedious grunt work for the team without being asked",
-      ],
-      "examples": [
-        "Devoted large amount of time to helping outside direct responsibilities",
-        "Refactored hundreds of legacy Shepherd nodes",
-        "Acted as sole maintainer of Boxen for years",
-      ],
-    }, {
-      "summary": "Lives the company values, guards positive culture, and defines policies that support relatedness between teams",
-      "signals": [
-        "Brings separate teams together to build relatedness",
-        "Holds individuals, teams, and leadership accountable to Medium's values",
-        "Sets the tone, policy, and goals around maintaining an inclusive company",
-      ],
-      "examples": [
-        "Organized wine and olive tasting offsite to Napa for the whole engineering org",
-        "Devised, delivered and acted on findings from an engineer happiness survey",
-        "Challenged and corrected exclusionary behaviour or policies",
-      ],
-    }],
-  },
+  }
 }
 
 export const trackIds: TrackId[] = Object.keys(tracks)
@@ -1193,14 +1025,13 @@ export const categoryColorScale = d3.scaleOrdinal()
   .range(['#00abc2', '#428af6', '#e1439f', '#e54552'])
 
 export const titles = [
-  {label: 'Engineer I', minPoints: 0, maxPoints: 16},
-  {label: 'Engineer II', minPoints: 17, maxPoints: 35},
-  {label: 'Senior Engineer', minPoints: 36, maxPoints: 57},
-  {label: 'Group Lead', minPoints: 36, maxPoints: 57},
-  {label: 'Staff Engineer', minPoints: 58, maxPoints: 89},
-  {label: 'Senior Group Lead', minPoints: 58, maxPoints: 89},
-  {label: 'Principal Engineer', minPoints: 90},
-  {label: 'Director of Engineering', minPoints: 90}
+  {label: 'Junior Product Designer', minPoints: 0, maxPoints: 19},
+  {label: 'Product Designer I', minPoints: 20, maxPoints: 25},
+  {label: 'Product Designer II', minPoints: 26, maxPoints: 34},
+  {label: 'Senior Product Designer', minPoints: 35, maxPoints: 39},
+  {label: 'Staff Product Designer', minPoints: 40, maxPoints: 45},
+  {label: 'Principal Product Designer', minPoints: 46, maxPoints: 51},
+  {label: 'Creative Director', minPoints: 52}
 ]
 
 export const eligibleTitles = (milestoneMap: MilestoneMap): string[] => {
