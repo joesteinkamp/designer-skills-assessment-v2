@@ -17,9 +17,13 @@ class TitleSelector extends React.Component<Props> {
       <style jsx>{`
         select {
           font-size: 20px;
-          line-height: 20px;
+          line-height: 24px;
           margin-bottom: 20px;
           min-width: 300px;
+          border: 0;
+          appearance: none; 
+          -webkit-appearance: none; 
+          -moz-appearance: none; 
         }
       `}</style>
       {titles.map(title => (
