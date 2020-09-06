@@ -11,7 +11,7 @@ const margins = {
   bottom: 30,
   left: 10
 }
-const height = 150
+const height = 120
 const width = 550
 
 type Props = {

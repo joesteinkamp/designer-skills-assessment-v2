@@ -62,8 +62,8 @@ class NightingaleChart extends React.Component<Props> {
             stroke-linejoin: round;
           }
           .track-current .track-milestone {
-            stroke: rgba(255, 158, 44, .4);
-            stroke-width: 3px;
+            stroke: rgba(51, 0, 250, .4);
+            stroke-width: 2px;
             stroke-linejoin: round;
           }
           .track-name {

@@ -144,7 +144,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             border-bottom: 2px solid #ccc;
           }
           .name-input:hover, .name-input:focus {
-            border-bottom: 2px solid #0000ff;
+            border-bottom: 2px solid #3300fa;
             background-color: #fafafa;
             outline: 0;
           }
