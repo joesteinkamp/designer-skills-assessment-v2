@@ -1,27 +1,27 @@
 // @flow
 import * as d3 from 'd3'
 
-export type TrackId = 'IA' | 'VISUAL_DESIGN' | 'IXD' | 'TOOLSET' |
-  'SERVICE_DESIGN' | 'RESEARCH_ANALYTICS' | 'TECH_FLUENCY' | 'BIZ_FLUENCY' |
-  'COMMUNICATION' | 'FACILITATION' | 'WELLBEING' | 'ACCOMPLISHMENT' |
-  'MENTORSHIP' | 'EVANGELISM'
+export type TrackId = 'IA' | 'VD' | 'IXD' | 'TE' |
+  'SD' | 'R&A' | 'TF' | 'BF' |
+  'Cn' | 'Fn' | 'Gt' | 'Ey' |
+  'Mp' | 'Em'
 export type Milestone = 0 | 1 | 2 | 3 | 4
 
 export type MilestoneMap = {
   'IA': Milestone,
-  'VISUAL_DESIGN': Milestone,
+  'VD': Milestone,
   'IXD': Milestone,
-  'TOOLSET': Milestone,
-  'SERVICE_DESIGN': Milestone,
-  'RESEARCH_ANALYTICS': Milestone,
-  'TECH_FLUENCY': Milestone,
-  'BIZ_FLUENCY': Milestone,
-  'COMMUNICATION': Track,
-  'FACILITATION': Track,
-  'GRIT': Track,
-  'EMPATHY': Track,
-  'MENTORSHIP': Milestone,
-  'EVANGELISM': Milestone,
+  'TE': Milestone,
+  'SD': Milestone,
+  'R&A': Milestone,
+  'TF': Milestone,
+  'BF': Milestone,
+  'Cn': Track,
+  'Fn': Track,
+  'Gt': Track,
+  'Ey': Track,
+  'Mp': Milestone,
+  'Em': Milestone,
 }
 export const milestones = [0, 1, 2, 3, 4]
 
@@ -63,19 +63,19 @@ export type Track = {
 
 type Tracks = {|
   'IA': Track,
-  'VISUAL_DESIGN': Track,
+  'VD': Track,
   'IXD': Track,
-  'TOOLSET': Track,
-  'SERVICE_DESIGN': Track,
-  'RESEARCH_ANALYTICS': Track,
-  'TECH_FLUENCY': Track,
-  'BIZ_FLUENCY': Track,
-  'COMMUNICATION': Track,
-  'FACILITATION': Track,
-  'GRIT': Track,
-  'EMPATHY': Track,
-  'MENTORSHIP': Track,
-  'EVANGELISM': Track
+  'TE': Track,
+  'SD': Track,
+  'R&A': Track,
+  'TF': Track,
+  'BF': Track,
+  'Cn': Track,
+  'Fn': Track,
+  'Gt': Track,
+  'Ey': Track,
+  'Mp': Track,
+  'Em': Track
 |}
 
 export const tracks: Tracks = {
@@ -123,7 +123,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "VISUAL_DESIGN": {
+  "VD": {
     "displayName": "Visual Design",
     "category": "A",
     "description": "Develops expertise in web client technologies, such as HTML, CSS, and JavaScript",
@@ -257,7 +257,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "TOOLSET": {
+  "TE": {
     "displayName": "Toolset Expertise",
     "category": "A",
     "description": "Develops expertise in server side engineering, using technologies such as Go, NodeJS, or Scala",
@@ -324,7 +324,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "SERVICE_DESIGN": {
+  "SD": {
     "displayName": "Service Design",
     "category": "A",
     "description": "Delivers well-scoped programs of work that meet their goals, on time, to budget, harmoniously",
@@ -391,7 +391,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "RESEARCH_ANALYTICS": {
+  "R&A": {
     "displayName": "Research &  Analytics",
     "category": "A",
     "description": "Shares the right amount of information with the right people, at the right time, and listens effectively",
@@ -458,9 +458,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "TECH_FLUENCY": {
+  "TF": {
     "displayName": "Technical Fluency",
-    "category": "A",
+    "category": "B",
     "description": "Embodies and promotes practices to ensure excellent quality products and services",
     "milestones": [{
       "summary": "Delivers consistently good quality work",
@@ -525,9 +525,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "BIZ_FLUENCY": {
+  "BF": {
     "displayName": "Business Fluency",
-    "category": "A",
+    "category": "B",
     "description": "Challenges the status quo and effects positive organizational change outside of mandated work",
     "milestones": [{
       "summary": "Identifies opportunities for organizational change or product improvements",
@@ -592,24 +592,24 @@ export const tracks: Tracks = {
     }],
   },
 
-  "COMMUNICATION": {
+  "Cn": {
     "displayName": "Communication",
-    "category": "B",
-    "description": "Provides strategic support to engineers to help them build the career they want",
+    "category": "C",
+    "description": "Provides excellent storytelling of design decision and communicates clearly.",
     "milestones": [{
-      "summary": "Gives insight into opportunities and helps identify individuals' strengths and weaknesses",
+      "summary": "Developing skill for communicating rationale to team members",
       "signals": [
-        "Advocates on behalf and in defense of a group member",
-        "Shares opportunities for improvements and recognises achievements",
-        "Explains appropriate available industry paths",
+        "Communicates project status clearly and effectively",
+        "Asks for help at the appropriate juncture",
+        "Comfortable speaking with peers",
       ],
       "examples": [
-        "Collected and delivered feedback",
-        "Discussed career options and areas of interest informally",
-        "Hosted a Floodgate Academy intern",
+        "Updates design tasks based on progress",
+        "Presents designs within a design critique",
+        "Provide feedback to other designers",
       ],
     }, {
-      "summary": "Formally supports and advocates for one person and provides tools to help them solve career problems",
+      "summary": "Communicates with the wider team appropriately, focusing on timeliness and good quality conversations",
       "signals": [
         "Ensure a group member has an appropriate role on their team",
         "Offers effective career advice to group members, without being prescriptive",
@@ -621,7 +621,7 @@ export const tracks: Tracks = {
         "Taught group members the GROW model",
       ],
     }, {
-      "summary": "Inspires and retains a small group of people and actively pushes them to stretch themselves",
+      "summary": "Confidently communicates decision-making rationale to team members",
       "signals": [
         "Discusses paths, and creates plans for personal and professional growth",
         "Advocates to align people with appropriate roles within organization",
@@ -630,38 +630,26 @@ export const tracks: Tracks = {
       "examples": [
         "Reviewed individual group member progression every 6 weeks",
         "Suggested appropriate group member for Tech Lead position",
-        "Arranged a requested switch of discipline for a group member",
+        "Helped prepare for a cross-functional team meeting",
       ],
     }, {
-      "summary": "Manages interactions and processes between groups, promoting best practices and setting a positive example",
+      "summary": "Storytelling and persuasion techniques build trust at the highest-level",
       "signals": [
-        "Manages team transitions smoothly, respecting team and individual needs",
-        "Develops best practices for conflict resolution",
-        "Ensures all group members' roles are meeting their career needs",
+        "Demonstrates confidence and charisma",
+        "Comfortable communicating at all levels of the organization",
+        "Designs and delivers plans to execs, the board, and outside investors",
       ],
       "examples": [
-        "Completed training on situational leadership",
-        "Built a resourcing plan based on company, team, and individual goals",
-        "Prevented regretted attrition with intentional, targeted intervention",
-      ],
-    }, {
-      "summary": "Supports the development of a signficant part of the engineering org, and widely viewed as a trusted advisor",
-      "signals": [
-        "Supports and develops senior leaders",
-        "Identified leadership training opportunities for senior leadership",
-        "Pushes everyone to be as good as they can be, with empathy",
-      ],
-      "examples": [
-        "Provided coaching to group leads",
-        "Devised Pathwise curriculum for group leads",
-        "Advocated to execs for engineer development resources and programs",
+        "Presented design visions or plans to cross-functional teams",
+        "Presented to the board about key experience metrics and business opportunities from CX improvements",
+        "Aligned the entire organization around design vision",
       ],
     }],
   },
 
-  "FACILITATION": {
+  "Fn": {
     "displayName": "Facilitation",
-    "category": "B",
+    "category": "C",
     "description": "Defines processes and structures that enables the strong growth and execution of a diverse eng organization",
     "milestones": [{
       "summary": "Respects and participates in processes, giving meaningful feedback to help the organization improve",
@@ -726,9 +714,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "GRIT": {
+  "Gt": {
     "displayName": "Grit",
-    "category": "B",
+    "category": "C",
     "description": "Supports the emotional well-being of group members in difficult times, and celebrates their successes",
     "milestones": [{
       "summary": "Uses tools and processes to help ensure colleagues are healthy and happy",
@@ -793,9 +781,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "EMPATHY": {
+  "Ey": {
     "displayName": "Empathy",
-    "category": "B",
+    "category": "C",
     "description": "Inspires day to day excellence, maximises potential and effectively resolves performance issues with compassion",
     "milestones": [{
       "summary": "Helps individuals identify blockers and helps them identify next steps for resolution",
@@ -860,9 +848,9 @@ export const tracks: Tracks = {
     }],
   },
 
-  "MENTORSHIP": {
+  "Mp": {
     "displayName": "Mentorship",
-    "category": "C",
+    "category": "D",
     "description": "Provides support to colleagues, spreads knowledge, and develops the team outside formal reporting structures",
     "milestones": [{
       "summary": "Informally mentors individuals in an ad-hoc way, supports new hires, and conveys institutional knowledge",
@@ -927,10 +915,10 @@ export const tracks: Tracks = {
     }],
   },
 
-  "EVANGELISM": {
+  "Em": {
     "displayName": "Evangelism",
-    "category": "C",
-    "description": "Promotes Medium to the outside world and establishes it as an attractive and thoughtful place to work",
+    "category": "D",
+    "description": "Promotes Design at Tegus internally and externally and establishes it as an attractive and thoughtful place to work",
     "milestones": [{
       "summary": "Represents Medium well externally, and influences individuals positively",
       "signals": [

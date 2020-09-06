@@ -57,17 +57,39 @@ class NightingaleChart extends React.Component<Props> {
             cursor: pointer;
           }
           .track-milestone-current, .track-milestone:hover {
-            stroke: #000;
-            stroke-width: 4px;
+            stroke: #000 !important;
+            stroke-width: 4px !important;
             stroke-linejoin: round;
           }
+          .track-current .track-milestone {
+            stroke: rgba(255, 158, 44, .4);
+            stroke-width: 3px;
+            stroke-linejoin: round;
+          }
+          .track-name {
+            display: none;
+            font-size: 11px;
+            fill: rgba(0, 0, 0, .72);
+          }
+          .track:hover .track-name {
+            display: block;
+          }
+          .track-label {
+            display: block;
+            font-size: 13px;
+          }
+          .track:hover .track-label {
+            display: none;
+          }
         `}</style>
+        
         <svg>
-          <g transform={`translate(${width/2},${width/2}) rotate(-33.75)`}>
+          <g transform={`translate(${width/2},${width/2}) rotate(0)`}>
             {trackIds.map((trackId, i) => {
               const isCurrentTrack = trackId == this.props.focusedTrackId
               return (
-                <g key={trackId} transform={`rotate(${i * 360 / trackIds.length})`}>
+                <g key={trackId} transform={`rotate(${i * 360 / trackIds.length})`} className={'track ' + (isCurrentTrack ? 'track-current' : '')}>
+                  
                   {arcMilestones.map((milestone) => {
                     const isCurrentMilestone = isCurrentTrack && milestone == currentMilestoneId
                     const isMet = this.props.milestoneByTrack[trackId] >= milestone || milestone == 0
@@ -87,6 +109,8 @@ class NightingaleChart extends React.Component<Props> {
                       style={{fill: categoryColorScale(tracks[trackId].category)}}
                       className={"track-milestone " + (isCurrentTrack && !currentMilestoneId ? "track-milestone-current" : "")}
                       onClick={() => this.props.handleTrackMilestoneChangeFn(trackId, 0)} />
+                  <text transform={`rotate(${i * 360 - (360 / trackIds.length * 3.44)})`} x="62" y="0" textLength="-10" className="track-name">{tracks[trackId].displayName}</text>
+                  <text transform={`rotate(${i * 360 - (360 / trackIds.length * 3.44)})`} x="184" y="0" textLength="-20" className="track-label">{trackId}</text>
                 </g>
             )})}
           </g>

@@ -1,8 +1,8 @@
 {
-  "name": "eng-growth",
+  "name": "designer-skills-assessment",
   "version": "0.0.1",
   "main": "index.js",
-  "repository": "https://github.com/Medium/eng-growth",
+  "repository": "https://github.com/joesteinkamp/",
   "license": "MIT",
   "dependencies": {
     "d3": "^4.11.0",

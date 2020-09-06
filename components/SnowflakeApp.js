@@ -51,19 +51,19 @@ const emptyState = (): SnowflakeAppState => {
     title: '',
     milestoneByTrack: {
       'IA': 0,
-      'VISUAL_DESIGN': 0,
+      'VD': 0,
       'IXD': 0,
-      'TOOLSET': 0,
-      'SERVICE_DESIGN': 0,
-      'RESEARCH_ANALYTICS': 0,
-      'TECH_FLUENCY': 0,
-      'BIZ_FLUENCY': 0,
-      'COMMUNICATION': 0,
-      'FACILITATION': 0,
-      'GRIT': 0,
-      'EMPATHY': 0,
-      'MENTORSHIP': 0,
-      'EVANGELISM': 0
+      'TE': 0,
+      'SD': 0,
+      'R&A': 0,
+      'TF': 0,
+      'BF': 0,
+      'Cn': 0,
+      'Fn': 0,
+      'Gt': 0,
+      'Ey': 0,
+      'Mp': 0,
+      'Em': 0
     },
     focusedTrackId: 'IA'
   }
@@ -75,19 +75,19 @@ const defaultState = (): SnowflakeAppState => {
     title: 'Staff Product Designer',
     milestoneByTrack: {
       'IA': 3,
-      'VISUAL_DESIGN': 3,
+      'VD': 3,
       'IXD': 3,
-      'TOOLSET': 4,
-      'SERVICE_DESIGN': 4,
-      'RESEARCH_ANALYTICS': 2,
-      'TECH_FLUENCY': 3,
-      'BIZ_FLUENCY': 4,
-      'COMMUNICATION': 3,
-      'FACILITATION': 3,
-      'GRIT': 4,
-      'EMPATHY': 4,
-      'MENTORSHIP': 3,
-      'EVANGELISM': 1
+      'TE': 4,
+      'SD': 4,
+      'R&A': 2,
+      'TF': 3,
+      'BF': 4,
+      'Cn': 3,
+      'Fn': 3,
+      'Gt': 4,
+      'Ey': 4,
+      'Mp': 3,
+      'Em': 1
     },
     focusedTrackId: 'IA'
   }
