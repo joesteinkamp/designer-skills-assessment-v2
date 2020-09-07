@@ -10,6 +10,7 @@ import { eligibleTitles, trackIds, milestones, milestoneToPoints } from '../cons
 import PointSummaries from '../components/PointSummaries'
 import type { Milestone, MilestoneMap, TrackId } from '../constants'
 import React from 'react'
+import ReactDOM from 'react-dom'
 import TitleSelector from '../components/TitleSelector'
 
 type SnowflakeAppState = {
@@ -53,13 +54,11 @@ const emptyState = (): SnowflakeAppState => {
       'IA': 0,
       'VD': 0,
       'IXD': 0,
-      'TE': 0,
       'SD': 0,
       'R&A': 0,
       'TF': 0,
       'BF': 0,
       'Cn': 0,
-      'Fn': 0,
       'Gt': 0,
       'Ey': 0,
       'Mp': 0,
@@ -77,13 +76,11 @@ const defaultState = (): SnowflakeAppState => {
       'IA': 3,
       'VD': 3,
       'IXD': 3,
-      'TE': 4,
       'SD': 4,
       'R&A': 2,
       'TF': 3,
       'BF': 4,
       'Cn': 3,
-      'Fn': 3,
       'Gt': 4,
       'Ey': 4,
       'Mp': 3,
@@ -152,6 +149,13 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             color: #888;
             text-decoration: none;
           }
+          .easter-egg {
+            background: none;
+            border: 0;
+            font-size: 16px;
+            cursor: pointer;
+            line-height: 24px;
+          }
         `}</style>
         <div style={{margin: '19px auto 0', width: 450, textAlign: 'center'}}>
           <h1>Designer Skills Assessment</h1>
@@ -196,9 +200,11 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
         <div style={{display: 'flex', paddingBottom: '20px'}}>
           <div style={{flex: 1}}>
+            <a href="https://github.com/joesteinkamp/designer-skills-assessment-v2" target="_blank">Source here</a>. 
             Made by <a href="https://joesteinkamp.com" target="_blank">Joe Steinkamp</a>.
-            Learn about the <a href="https://docs.google.com/spreadsheets/d/1xUU5V-HZIm_pM9rYlRXHCYn8If2G5VgEW7I2x7m4ZUc/" target="_blank">Product Designer Levels Framework</a>.
+            Learn about <a href="https://docs.google.com/spreadsheets/d/1xUU5V-HZIm_pM9rYlRXHCYn8If2G5VgEW7I2x7m4ZUc/" target="_blank">Product Designer Levels Framework</a>.
             Forked from <a href="https://github.com/Medium/snowflake" target="_blank">Medium's Snowflake app</a>.
+            <button className="easter-egg" onClick={(i) => this.toggleNightingaleCurrentHighlight(i)}> 🔦</button>
           </div>
         </div>
       </main>
@@ -240,6 +246,17 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
     let titles = eligibleTitles(this.state.milestoneByTrack)
     title = titles.indexOf(title) == -1 ? titles[0] : title
     this.setState({ title })
+  }
+
+  toggleNightingaleCurrentHighlight() {
+    
+
+    const appDom = ReactDOM.findDOMNode(this)
+    const currentTrack = appDom.getElementsByClassName("track-current")[0]
+    console.log(currentTrack)
+    
+    currentTrack.classList.toggle("no-highlight")
+    
   }
 }
 

@@ -1,9 +1,9 @@
 // @flow
 import * as d3 from 'd3'
 
-export type TrackId = 'IA' | 'VD' | 'IXD' | 'TE' |
+export type TrackId = 'IA' | 'VD' | 'IXD' |
   'SD' | 'R&A' | 'TF' | 'BF' |
-  'Cn' | 'Fn' | 'Gt' | 'Ey' |
+  'Cn' | 'Gt' | 'Ey' |
   'Mp' | 'Em'
 export type Milestone = 0 | 1 | 2 | 3 | 4
 
@@ -11,13 +11,11 @@ export type MilestoneMap = {
   'IA': Milestone,
   'VD': Milestone,
   'IXD': Milestone,
-  'TE': Milestone,
   'SD': Milestone,
   'R&A': Milestone,
   'TF': Milestone,
   'BF': Milestone,
   'Cn': Track,
-  'Fn': Track,
   'Gt': Track,
   'Ey': Track,
   'Mp': Milestone,
@@ -39,13 +37,13 @@ export const milestoneToPoints = (milestone: Milestone): number => {
 
 export const pointsToLevels = {
   '0': '0',
-  '14': '1',
-  '20': '2',
-  '26': '3',
-  '35': '4',
-  '40': '5',
-  '46': '6',
-  '52': '7',
+  '12': '1',
+  '18': '2',
+  '24': '3',
+  '30': '4',
+  '36': '5',
+  '41': '6',
+  '46': '7',
 }
 
 export const maxLevel = 56
@@ -65,13 +63,11 @@ type Tracks = {|
   'IA': Track,
   'VD': Track,
   'IXD': Track,
-  'TE': Track,
   'SD': Track,
   'R&A': Track,
   'TF': Track,
   'BF': Track,
   'Cn': Track,
-  'Fn': Track,
   'Gt': Track,
   'Ey': Track,
   'Mp': Track,
@@ -84,7 +80,7 @@ export const tracks: Tracks = {
     "category": "A",
     "description": "Develops expertise in information architecture",
     "milestones": [{
-      "summary": "Works effectively within established information architectures, following current best practices",
+      "summary": "Passable: Works effectively within established information architectures, following current best practices",
       "signals": [
         "Delivers features requiring simple local modifications",
         "Reuses existing taxonomy appropriately",
@@ -93,7 +89,7 @@ export const tracks: Tracks = {
         "Adds new entries to existing taxonomy",
       ],
     }, {
-      "summary": "Designs minor improvements to existing architecture",
+      "summary": "Capable: Designs minor improvements to existing architecture",
       "signals": [
         "Improves objects in the existing taxonomy",
         "Revises old information to adhere to new patterns",
@@ -102,7 +98,7 @@ export const tracks: Tracks = {
         "Revises nomenclature of existing aspects of a taxonomy",
       ],
     }, {
-      "summary": "Designs new aspects of existing architecture and demonstrates a nuanced understanding of the existing architecture",
+      "summary": "Proficient: Designs new aspects of existing architecture and demonstrates a nuanced understanding of the existing architecture",
       "signals": [
         "Defines new objects to expand an existing taxonomy",
       ],
@@ -111,7 +107,7 @@ export const tracks: Tracks = {
         "Add new levels in the architecture",
       ],
     }, {
-      "summary": "Designs complex, reusable architectures that pioneer best practices",
+      "summary": "Excellent: Designs complex, reusable architectures that pioneer best practices",
       "signals": [
         "Pioneers new architecture and taxonomies",
         "Strategy to transition from old patterns to new patterns",
@@ -126,66 +122,49 @@ export const tracks: Tracks = {
   "VD": {
     "displayName": "Visual Design",
     "category": "A",
-    "description": "Develops expertise in web client technologies, such as HTML, CSS, and JavaScript",
+    "description": "Visual Design shapes the product experience through artifacts like illustrations, photography, typography, color and more to improve the usability of products.    ",
     "milestones": [{
-      "summary": "Works effectively within established web client architectures, following current best practices",
+      "summary": "Passable: Works effectively within an established visual system, following current best practices",
       "signals": [
+        "Becoming familiar with the limitations and requirements of designing in products and digital scenarios, knowledge and familiarity of designing within systems",
         "Makes minor modifications to existing screens",
-        "Fixes simple design quality issues",
-        "Uses CSS appropriately, following style guide",
+        "Uses visual system correctly, following style guide",
       ],
       "examples": [
-        "Implemented sticky footer on the post page",
-        "Hooked up the action to dismiss a post from a stream",
-        "Built PaymentHistory screen using ResponseScreen",
+        "Updated icons on an existing page",
+        "Designed page with all existing components and reuses layout conventions",
+        "Created simple illustrations",
       ],
     }, {
-      "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
+      "summary": "Capable: Advanced visual contributor",
       "signals": [
-        "Makes sensible abstractions based on template and code patterns",
-        "Specs and builds interactive components independently",
-        "Prototypes simple new features quickly",
+        "Strong understanding of graphic design foundation: grid, typography, color theory",
+        "Deep understanding of brand and applying in a product",
       ],
       "examples": [
-        "Built credit card input component",
-        "Created shared buttons template",
-        "Built modal system",
+        "Revised style guide",
+        "Created advanced illustrations",
       ],
     }, {
-      "summary": "Designs major new features and demonstrates a nuanced understanding of browser constraints",
+      "summary": "Proficient: Leads visual direction",
       "signals": [
-        "Provides useful design feedback and suggests feasible alternatives",
-        "Performs systemic tasks to significantly minimise bundle size",
-        "Acts a caretaker for all of web client code",
+        "Strong understanding of motion, illustration, photo and video editing",
+        "Coordinating visual strategy for all products",
+        "Leading the visual direction for products across multiple teams",
       ],
       "examples": [
-        "Designed font loading strategy for Medium",
-        "Researched utility of service workers for Medium",
-        "Designed and implemented ResponseScreen",
+        "Presented many visual pitches to leadership",
       ],
     }, {
-      "summary": "Builds complex, reusable architectures that pioneer best practices and enable engineers to work more effectively",
+      "summary": "Excellent: Is an industry-leading expert in art direction",
       "signals": [
-        "Pioneers architecture migrations that reduce programmer burden",
-        "Implements complex UI transitions that bring delight",
-        "Makes architectural decisions that eliminate entire classes of bugs",
+        "Leads visual direction at an organizational level",
+        "Defines a long-term vision",
+        "You are a recognized, industry expert in Visual Design.",
       ],
       "examples": [
-        "Designed Medium's post morpher and delta system",
-        "Implemented Medium's scrolling text over image blur",
-        "Designed and pioneered proto-based model storage",
-      ],
-    }, {
-      "summary": "Is an industry-leading expert in web client or sets strategic web client direction for an eng team",
-      "signals": [
-        "Invents new techniques to innovate and overcome browser constraints",
-        "Identifies and solved systemic problems with current architecture",
-        "Defines a long-term vision for web client and ensures projects are in service of it",
-      ],
-      "examples": [
-        "Invented CSS in JS",
-        "Defined and drove migration strategy to Lite",
-        "Implemented unidirectional data flow to completion",
+        "Designed multiple successful brands' art direction",
+        "Created leading visual standards and trends",
       ],
     }],
   },
@@ -193,133 +172,52 @@ export const tracks: Tracks = {
   "IXD": {
     "displayName": "Interaction Design",
     "category": "A",
-    "description": "Develops expertise in foundational systems, such as deployments, pipelines, databases and machine learning",
+    "description": "Interaction Design is the design of the interaction between the user and the product.",
     "milestones": [{
-      "summary": "Works effectively within established structures, following current best practices",
+      "summary": "Passable: Only leverages current best practices",
       "signals": [
-        "Writes thorough postmortems for service outages",
-        "Makes simple configuration changes to services",
-        "Performs backfills safely and effectively, without causing pages",
+        "Know and use of Design System",
+        "Explore best practices for common design problems; solutions are solid, though not novel",
+        "Capable engagement in standard design processes and works within establish team process. Often most successful when pairing with another designer.",
       ],
       "examples": [
-        "Made safe and effective Ansible changes",
-        "Implemented new ETL pipelines based on existing ones",
-        "Resolved out of disk errors independently",
+        "Solved specific function-level problems (e.g., \"add to shopping cart\")",
+        "Completed a heuristic evaluation and/or a competitive analysis",
       ],
     }, {
-      "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
+      "summary": "Capable: Ability to translate best practices into business success",
       "signals": [
-        "Made minor version upgrades to technologies",
-        "Builds machine learning jobs within the ML framework",
-        "Triages service issues correctly and independently",
+        "An established performer with strong communication skills who proactively builds relationships",
+        "Emerging recognition that it's not all about design, but how design contributes to a broader goal; recognizes business goals and technical constraints",
+        "Strong and capable engagement in standard design processes",
+        "Confident in applying best practices to common design problems; solutions are solid, not novel",
       ],
       "examples": [
-        "Upgraded NodeJS from 8.0 to 8.1.1",
-        "Built custom packages for RPMs",
-        "Improved ETL efficiency by improving Dynamo to S3 loading",
+        "Contributed to Design System",
+        "Solved specific product capabilities (e.g., Checkout process)",
       ],
     }, {
-      "summary": "Designs standalone systems of moderate complexity, or major new features in existing systems",
+      "summary": "Proficient: Generates new business successes from contextually appropriate interactions",
       "signals": [
-        "Acts as primary maintainer for existing critical systems",
-        "Designs moderately complex systems",
-        "Makes major version upgrades to libraries",
+        "Begins going beyond best practices, and starts uncovering novel, unexpected, but still workable solutions",
+        "Clarifies success metrics and ties efforts toward delivering business value",
+        "Develops the process/approach for tackling a design problem, using known methods, including outside of team process; anticipates problems",
       ],
       "examples": [
-        "Designed Ansible configuration management",
-        "Built Medium's realtime stats pipeline",
-        "Designed flexible framework for writing machine learning jobs",
+        "Started Design System",
+        "Led the solution of a product area; connects that to broader product vision (e.g, product page and purchase experience)",
       ],
     }, {
-      "summary": "Builds complex, reusable architectures that pioneer best practices for other engineers, or multi-system services",
+      "summary": "Excellent: Recognized industry expert in Interaction Design.",
       "signals": [
-        "Designs complex projects that encompass multiple systems and technologies",
-        "Demonstrates deep knowledge of foundational systems",
-        "Introduces new databases and technologies to meet underserved needs",
+        "Frames and solves hard problems",
+        "Presents company as an industry leader in design",
+        "Working with partners and stakeholders, begins making real change in how the company approaches its business",
+        "Articulates vision for the team that excites and inspires leaders and partner",
       ],
       "examples": [
-        "Designed and built BBFD",
-        "Designed AWS configuration management",
-        "Introduced Kinesis and pioneered streaming events pipeline",
-      ],
-    }, {
-      "summary": "Is an industry-leading expert in foundational engineering or sets strategic foundational direction for an eng team",
-      "signals": [
-        "Designs transformational projects in service of long-term goals",
-        "Defines the strategic vision for foundational work and supporting technologies",
-        "Invents industry-leading techniques to solve complex problems",
-      ],
-      "examples": [
-        "Invented a novel ML technique that advanced the state of the art",
-        "Defined and developed Medium's continuous delivery strategy",
-        "Developed and implemented HA strategy",
-      ],
-    }],
-  },
-
-  "TE": {
-    "displayName": "Toolset Expertise",
-    "category": "A",
-    "description": "Develops expertise in server side engineering, using technologies such as Go, NodeJS, or Scala",
-    "milestones": [{
-      "summary": "Works effectively within established server side frameworks, following current best practices",
-      "signals": [
-        "Adds NodeJS endpoints using layers architecture",
-        "Adds golang endpoints using Gotham architecture",
-        "Makes minor server changes to support client needs",
-      ],
-      "examples": [
-        "Added IFTTT trigger for new bookmark to medium2",
-        "Added delete audio route to Buggle",
-        "Queried a Dynamo LSI appropriately",
-      ],
-    }, {
-      "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
-      "signals": [
-        "Assesses correctness and utility of existing code and avoids blind copy-pasting",
-        "Generalizes code when appropriate",
-        "Determines data needs from product requirements",
-      ],
-      "examples": [
-        "Identified need for new index on Dynamo",
-        "Acted as caretaker for routes protos",
-        "Updated Facebook API version and codebase dependencies",
-      ],
-    }, {
-      "summary": "Designs standalone systems of moderate complexity, or major new features in existing systems",
-      "signals": [
-        "Acts as primary maintainer for existing critical systems",
-        "Integrates third party services effectively",
-        "Writes playbooks for new service maintenance",
-      ],
-      "examples": [
-        "Implemented Google Auth login to Medium",
-        "Implemented payments integration with Stripe",
-        "Built Textshots server",
-      ],
-    }, {
-      "summary": "Builds complex, reusable architectures that pioneer best practices for other engineers, or multi-system services",
-      "signals": [
-        "Delivers complex systems that achieve their goals",
-        "Avoids subtle architectural mistakes when considering new systems",
-        "Makes appropriate buy vs build choices",
-      ],
-      "examples": [
-        "Designed Medium's ranked feed architecture",
-        "Designed custom domains architecture",
-        "Created Gotham framework for creating Go services",
-      ],
-    }, {
-      "summary": "Is an industry-leading expert in server side engineering or sets strategic server side direction for an eng team",
-      "signals": [
-        "Designs transformational projects of significant complexity and scope",
-        "Makes decisions that have positive, long term, wide ranging consequences",
-        "Identifies and solves systemic problems with current architecture",
-      ],
-      "examples": [
-        "Researched, vetted, and selected Go as Medium's statically typed language",
-        "Defined microservices architecture and medium2 migration plan",
-        "Defined and implemented proprietary IP core to the company's success",
+        "Driven innovative efforts that uncovered new value with new kinds of experiences",
+        "Created a Big Picture of an entire company's offerings, and how they integrate and coordinate",
       ],
     }],
   },
@@ -327,66 +225,42 @@ export const tracks: Tracks = {
   "SD": {
     "displayName": "Service Design",
     "category": "A",
-    "description": "Delivers well-scoped programs of work that meet their goals, on time, to budget, harmoniously",
+    "description": "Service Design shapes the product experience through thoughtful holistic thinking to consider how the experience is a sum of many pieces.",
     "milestones": [{
-      "summary": "Effectively delivers individual tasks",
+      "summary": "Focuses on one user's specific journey",
       "signals": [
-        "Estimates small tasks accurately",
-        "Delivers tightly-scoped projects efficiently",
-        "Writes effective technical specs outlining approach",
+        "Able to make a single user's experience better",
+        "Create experience within the existing constraints",
       ],
       "examples": [
-        "Wrote the technical spec for featured post images",
-        "Delivered stream item support for email digests",
-        "Delivered payment history dashboard",
+        "Created a basic journey map of our specific user's goal",
       ],
     }, {
-      "summary": "Effectively delivers small personal projects",
+      "summary": "See the user's entire experience as the sum of many conditional journeys",
       "signals": [
-        "Performs research and considers alternative approaches",
-        "Balances pragmatism and polish appropriately",
-        "Defines and hits interim milestones",
+        "Aware of systems that enable an experience",
       ],
       "examples": [
-        "Delivered promo editor",
-        "Delivered audio uploading for web client",
-        "Executed the recommends to claps backfill",
+        "Created detailed journey maps with holistic look at what a single user is seeing and doing",
       ],
     }, {
-      "summary": "Effectively delivers projects through a small team",
+      "summary": "Complete awareness of all the behind the scenes and how other aspects influence a single user's experience",
       "signals": [
-        "Delegates tasks to others appropriately",
-        "Integrates business needs into project planning",
-        "Chooses appropriate project management strategy based on context",
+        "Begins to be aware of how other users impact other users experience",
       ],
       "examples": [
-        "Ran project retro to assess improvement opportunities",
-        "Completed launch checklist unprompted for well controlled rollout",
-        "Facilitated project kickoff meeting to get buy-in",
+        "Created detailed service blueprints",
+        "Recommended system changes",
+        "Designed an experience for users on both sides of the service",
       ],
     }, {
-      "summary": "Effectively delivers projects through a large team, or with a significant amount of stakeholders or complexity",
+      "summary": "Actively shapes every aspect that contributes to all users and their experiences",
       "signals": [
-        "Finds ways to deliver requested scope faster, and prioritizes backlog",
-        "Manages dependencies on other projects and teams",
-        "Leverages recognition of repeated project patterns",
+        "Influences leadership to approach solutions holistically",
+        "Scope of initiatives at the organization-level",
       ],
       "examples": [
-        "Oversaw technical delivery of Hightower",
-        "Managed infrastructure migration to VPC",
-        "Involved marketing, legal, and appropriate functions at project start",
-      ],
-    }, {
-      "summary": "Manages major company pushes delivered by multiple teams",
-      "signals": [
-        "Considers external constraints and business objectives when planning",
-        "Leads teams of teams, and coordinates effective cross-functional collaboration",
-        "Owns a key company metric",
-      ],
-      "examples": [
-        "Managed technical migration to SOA",
-        "Lead technical delivery of 10/7",
-        "Delivered multi-month engineering project on time",
+        "Recommended process and organizational changes",
       ],
     }],
   },
@@ -394,66 +268,46 @@ export const tracks: Tracks = {
   "R&A": {
     "displayName": "Research &  Analytics",
     "category": "A",
-    "description": "Shares the right amount of information with the right people, at the right time, and listens effectively",
+    "description": "Effectively uses quantitative and qualitative data to make informed design decisions.",
     "milestones": [{
-      "summary": "Communicates effectively to close stakeholders when called upon, and incorporates constructive feedback",
+      "summary": "Has a basic understanding of common user research techniques",
       "signals": [
-        "Communicates project status clearly and effectively",
-        "Collaborates with others with empathy",
-        "Asks for help at the appropriate juncture",
+        "Relies solely on qualitative data",
       ],
       "examples": [
-        "Updated The Watch before running a backfill",
-        "Updated project status changes in Asana promptly",
-        "Gave thoughtful check-in and check-out comments",
+        "Conducted usability tests",
+        "Conducted user interviews",
       ],
     }, {
-      "summary": "Communicates with the wider team appropriately, focusing on timeliness and good quality conversations",
+      "summary": "Expands quantative data from others and leverages more qualitative methodologies",
       "signals": [
-        "Practises active listening and suspension of attention",
-        "Ensures stakeholders are aware of current blockers",
-        "Chooses the appropriate tools for accurate and timely communication",
+        "Works with others to review existing quantitative data",
+        "Begins to speak towards outcomes over output",
       ],
       "examples": [
-        "Received and integrated critical feedback positively",
-        "Created cross-team Slack channel for payments work",
-        "Spoke to domain experts before writing spec",
+        "Conducted concept tests",
+        "Created analytics reports / analysis",
+        "Defined and achieved success metrics within existing data systems",
       ],
     }, {
-      "summary": "Proactively shares information, actively solicits feedback, and facilitates communication for multiple stakeholders",
+      "summary": "Complete focus on results",
       "signals": [
-        "Resolves communication difficulties between others",
-        "Anticipates and shares schedule deviations in plenty of time",
-        "Manages project stakeholder expectations effectively",
+        "Maps out how to collect future quantitative data to evaluate the quality of the UX",
+        "Is a user of quantitative data tools",
+        "Willing to compromise designs to achieve more immediate goals (realistic of constraints and value)",
       ],
       "examples": [
         "Directed team response effectively during outages",
-        "Gave a substantial Eng All Hands presentation on React",
-        "Gave notice of upcoming related work in Eng Briefing",
+        "Conducted A/B testing",
+        "Advocated for higher designer quality with evidence to convince others",
       ],
     }, {
-      "summary": "Communicates complex ideas skillfully and with nuance, and establishes alignment within the wider organization",
+      "summary": "Industry leader in effectively measuring the quality of all an organization's user experiences",
       "signals": [
-        "Communicates project risk and tradeoffs skillfully and with nuance",
-        "Contextualizes and clarifies ambiguous direction and strategy for others",
-        "Negotiates resourcing compromises with other teams",
+        "Develops strategies to improve key experience indicators",
       ],
       "examples": [
-        "Lead off-site workshop on interviewing",
-        "Wrote Medium's growth framework and rationale",
-        "Aligned the entire organization around claps",
-      ],
-    }, {
-      "summary": "Influences outcomes at the highest level, moves beyond mere broadcasting, and sets best practices for others",
-      "signals": [
-        "Defines processes for clear communication for the entire team",
-        "Shares the right amount of information with the right people, at the right time",
-        "Develops and delivers plans to execs, the board, and outside investors",
-      ],
-      "examples": [
-        "Organized half year check-in company offsite",
-        "Created the communication plan for a large organizational change",
-        "Presented to the board about key company metrics and projects",
+        "Presented and sold leadership into key experience indicators",
       ],
     }],
   },
@@ -461,30 +315,25 @@ export const tracks: Tracks = {
   "TF": {
     "displayName": "Technical Fluency",
     "category": "B",
-    "description": "Embodies and promotes practices to ensure excellent quality products and services",
+    "description": "Ability to understand, communicate... and contribute to the various technologies and frameworks that are used in the designer’s context.",
     "milestones": [{
-      "summary": "Delivers consistently good quality work",
+      "summary": "Basic understanding of how engineering operates",
       "signals": [
-        "Tests new code thoroughly, both locally, and in production once shipped",
-        "Writes tests for every new feature and bug fix",
-        "Writes clear comments and documentation",
+        "Understands and has experience in the engineering lifecycle of a product from ideation to market launch.",
+        "Knows design tokens and understands value of reuse of code",
       ],
       "examples": [
-        "Caught a bug on Hatch before it went live",
-        "Landed non-trivial PR with no caretaker comments",
-        "Wrote hermetic tests for the happy and sad cases",
+        "Worked within an Agile environment",
       ],
     }, {
-      "summary": "Increases the robustness and reliability of codebases, and devotes time to polishing products and systems",
+      "summary": "Beginning to have ability to speak common language with engineers",
       "signals": [
-        "Refactors existing code to make it more testable",
-        "Adds tests for uncovered areas",
-        "Deletes unnecessary code and deprecates proactively when safe to do so",
+        "Understands a basic language / framework (HTML/Bootstrap)",
+        "Has learned the why behind technical constraints",
       ],
       "examples": [
-        "Requested tests for a PR when acting as reviewer",
-        "Reduced the number of zelda fitzgerald exceptions",
-        "Fixed a TODO for someone else in the codebase",
+        "Has successfully found creative solutions to technical constraints",
+        "Paired with engineers on specific CSS tweaks",
       ],
     }, {
       "summary": "Improves others' ability to deliver great quality work",
@@ -509,18 +358,6 @@ export const tracks: Tracks = {
         "Added code coverage reporting to iOS CI pipeline",
         "Iterated repeatedly to develop Medium's underlines solution",
         "Defined and oversaw plan for closing Heartbleed vulnerability",
-      ],
-    }, {
-      "summary": "Enables and encourages the entire organization to make quality a central part of the development process",
-      "signals": [
-        "Defines policies for the engineering org that encourage quality work",
-        "Identifies and eliminates single points of failure throughout the organization",
-        "Secures time and resources from execs to support great quality",
-      ],
-      "examples": [
-        "Negotiated resources for Fix-It week with exec team",
-        "Instituted and ensured success of a 20% time policy",
-        "Started The Watch",
       ],
     }],
   },
@@ -643,73 +480,6 @@ export const tracks: Tracks = {
         "Presented design visions or plans to cross-functional teams",
         "Presented to the board about key experience metrics and business opportunities from CX improvements",
         "Aligned the entire organization around design vision",
-      ],
-    }],
-  },
-
-  "Fn": {
-    "displayName": "Facilitation",
-    "category": "C",
-    "description": "Defines processes and structures that enables the strong growth and execution of a diverse eng organization",
-    "milestones": [{
-      "summary": "Respects and participates in processes, giving meaningful feedback to help the organization improve",
-      "signals": [
-        "Reflects on meetings that leave them inspired or frustrated",
-        "Teaches others about existing processes",
-        "Actively participates and makes contributions within organizational processes",
-      ],
-      "examples": [
-        "Facilitated effective tactical meeting with empathy",
-        "Explained tactical meeting format to a new hire",
-        "Provided feedback on sprint planning meeting",
-      ],
-    }, {
-      "summary": "Identifies opportunities to improve existing processes and makes changes that positively affect the local team",
-      "signals": [
-        "Defines meeting structure and cadence that meets team needs",
-        "Engages in organizational systems thinking",
-        "Advocates for improved diversity and inclusion, and proposes ideas to help",
-      ],
-      "examples": [
-        "Defined Frankenmeeting structure for small team",
-        "Improved Watch on-call rotation scheduling",
-        "Defined standard channels for inter-team communication",
-      ],
-    }, {
-      "summary": "Develops processes to solve ongoing organizational problems",
-      "signals": [
-        "Creates programs that meaningfully improve organizational diversity",
-        "Solves long-standing organizational problems",
-        "Reallocates resources to meet organizational needs",
-      ],
-      "examples": [
-        "Developed baseline team templates for consistency",
-        "Created bug-rotation program to address ongoing quality issues",
-        "Defined Guilds manifesto and charter",
-      ],
-    }, {
-      "summary": "Thinks deeply about organizational issues and identifies hidden dynamics that contribute to them",
-      "signals": [
-        "Evaluates incentive structures and their effect on execution",
-        "Analyzes existing processes for bias and shortfall",
-        "Ties abstract concerns to concrete organizational actions or norms",
-      ],
-      "examples": [
-        "Connected mobile recruiting difficulties to focus on excellence",
-        "Raised leadership level change discrepancies",
-        "Analyzed the hiring rubric for false negative potential",
-      ],
-    }, {
-      "summary": "Leads initiatives to address issues stemming from hidden dynamics and company norms",
-      "signals": [
-        "Builds programs to train leadership in desired skills",
-        "Creates new structures that provide unique growth opportunities",
-        "Leads planning and communication for reorgs",
-      ],
-      "examples": [
-        "Lead efforts to increase number of mobile engineers",
-        "Directed resources to meaningfully improve diversity at all levels",
-        "Built the growth framework rubric",
       ],
     }],
   },

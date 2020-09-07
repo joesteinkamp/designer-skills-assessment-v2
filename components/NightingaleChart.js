@@ -66,6 +66,9 @@ class NightingaleChart extends React.Component<Props> {
             stroke-width: 2px;
             stroke-linejoin: round;
           }
+            .track-current.no-highlight .track-milestone {
+              stroke-width: 0 !important;
+            }
           .track-name {
             display: none;
             font-size: 11px;
@@ -109,8 +112,8 @@ class NightingaleChart extends React.Component<Props> {
                       style={{fill: categoryColorScale(tracks[trackId].category)}}
                       className={"track-milestone " + (isCurrentTrack && !currentMilestoneId ? "track-milestone-current" : "")}
                       onClick={() => this.props.handleTrackMilestoneChangeFn(trackId, 0)} />
-                  <text transform={`rotate(${i * 360 - (360 / trackIds.length * 3.44)})`} x="62" y="0" textLength="-10" className="track-name">{tracks[trackId].displayName}</text>
-                  <text transform={`rotate(${i * 360 - (360 / trackIds.length * 3.44)})`} x="184" y="0" textLength="-20" className="track-label">{trackId}</text>
+                  <text transform={`rotate(${i * 360 - (360 / trackIds.length * 3)})`} x="62" y="0" textLength="-10" className="track-name">{tracks[trackId].displayName}</text>
+                  <text transform={`rotate(${i * 360 - (360 / trackIds.length * 3)})`} x="184" y="0" textLength="-20" className="track-label">{trackId}</text>
                 </g>
             )})}
           </g>

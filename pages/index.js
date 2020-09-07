@@ -5,3 +5,8 @@ export default () => <div>
   {/* <DeprecationNotice /> */}
   <SnowflakeApp />
 </div>
+
+
+
+
+// FUTURE INSPIRATION: https://github.com/liferay-design/path
