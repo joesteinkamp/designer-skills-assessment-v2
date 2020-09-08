@@ -356,7 +356,7 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Added code coverage reporting to iOS CI pipeline",
-        "Iterated repeatedly to develop Medium's underlines solution",
+        "Iterated repeatedly to develop Tegus underlines solution",
         "Defined and oversaw plan for closing Heartbleed vulnerability",
       ],
     }],
@@ -412,7 +412,7 @@ export const tracks: Tracks = {
       "examples": [
         "Created the interviewing rubric and booklet",
         "Implemented and secured support for native login",
-        "Migrated medium2 to mono repo and bazel",
+        "Migrated Tegus2 to mono repo and bazel",
       ],
     }, {
       "summary": "Effects change that has a substantial positive impact on the whole company",
@@ -423,8 +423,8 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Migrated the organization from Holacracy",
-        "Built Medium Android prototype and convinced execs to fund it",
-        "Convinced leadership and engineering org to move to Medium Lite architecture",
+        "Built Tegus Android prototype and convinced execs to fund it",
+        "Convinced leadership and engineering org to move to Tegus Lite architecture",
       ],
     }],
   },
@@ -647,7 +647,7 @@ export const tracks: Tracks = {
         "Lead from behind to support someone new to a leadership role",
       ],
     }, {
-      "summary": "Teaches small groups of engineers and contributes to Medium's shared knowledge base",
+      "summary": "Teaches small groups of engineers and contributes to Tegus shared knowledge base",
       "signals": [
         "Avoids siloing information when it can be usefully shared with others",
         "Works to increase the bus factor of systems",
@@ -656,7 +656,7 @@ export const tracks: Tracks = {
       "examples": [
         "Gave a brown bag presentation on payments",
         "Wrote Hatch post on avoiding RDS backfill issues",
-        "Wrote Medium-U content module",
+        "Wrote Tegus-U content module",
       ],
     }, {
       "summary": "Encourages people to mentor each other, and creates ways for them to do so",
@@ -666,7 +666,7 @@ export const tracks: Tracks = {
         "Creates brown bag series and lines up speakers",
       ],
       "examples": [
-        "Created and lead Medium's Women in Eng group",
+        "Created and lead Tegus Women in Eng group",
         "Organized an Eng All Hands with an outside speaker",
         "Designed and taught web client guild curriculum",
       ],
@@ -690,64 +690,64 @@ export const tracks: Tracks = {
     "category": "D",
     "description": "Promotes Design at Tegus internally and externally and establishes it as an attractive and thoughtful place to work",
     "milestones": [{
-      "summary": "Represents Medium well externally, and influences individuals positively",
+      "summary": "Represents Tegus well externally, and influences individuals positively",
       "signals": [
         "Shares personal and organizational successes with their network",
-        "Attends Medium-hosted events and talks with guests",
+        "Attends Tegus-hosted events and talks with guests",
         "Communicates genuine and honest excitement about their work externally",
       ],
       "examples": [
-        "Shared a Medium product launch post on Facebook",
+        "Shared a Tegus product launch post on Facebook",
         "Acted as a guide for a non-friend visitor to the office",
         "Supported PR efforts by giving a quote or having a photo taken",
       ],
     }, {
       "summary": "Participates more centrally in small events, and takes simple actions that positively influence groups of people",
       "signals": [
-        "Takes meaningful action to introduce people to Medium",
-        "Joined public Slack group and represented Medium appropriately, and well",
-        "Organizes positive small- or medium-sized events that bring people to Medium",
+        "Takes meaningful action to introduce people to Tegus",
+        "Joined public Slack group and represented Tegus appropriately, and well",
+        "Organizes positive small- or Tegus-sized events that bring people to Tegus",
       ],
       "examples": [
         "Volunteered as a helper for CODE2040 writing workshop",
         "Organized a short tour of the office by college students",
-        "Talked at a Women Who Code event hosted at Medium",
+        "Talked at a Women Who Code event hosted at Tegus",
       ],
     }, {
-      "summary": "Works hard to positively influence large groups of people on their views of Medium",
+      "summary": "Works hard to positively influence large groups of people on their views of Tegus",
       "signals": [
         "Mentors or participates in a high visibility way in an external organization",
         "Builds fruitful partnerships with external organizations",
-        "Writes blog posts about Medium that receive moderate traffic",
+        "Writes blog posts about Tegus that receive moderate traffic",
       ],
       "examples": [
-        "Represented Medium on a panel at a conference of industry experts",
+        "Represented Tegus on a panel at a conference of industry experts",
         "Established close ties with Creative Commons",
         "Built a durable, long-standing relationship with Code2040",
       ],
     }, {
-      "summary": "Establishes Medium as an great, innovative company and workplace to the whole industry",
+      "summary": "Establishes Tegus as an great, innovative company and workplace to the whole industry",
       "signals": [
         "Establishes themself as an industry thought leader who attracts talent",
-        "Publishes material about Medium's organizational or technical innovations",
-        "Leverages significant following to evangelise Medium",
+        "Publishes material about Tegus organizational or technical innovations",
+        "Leverages significant following to evangelise Tegus",
       ],
       "examples": [
-        "Published a paper on Medium technology in a peer-reviewed journal",
+        "Published a paper on Tegus technology in a peer-reviewed journal",
         "Authored joint-press release with EFF on DNT",
-        "Published “Why Content Editable Is Terrible” on the Medium engineering blog",
+        "Published “Why Content Editable Is Terrible” on the Tegus engineering blog",
       ],
     }, {
-      "summary": "Introduces Medium in a positive light to a wider audience outside the industry",
+      "summary": "Introduces Tegus in a positive light to a wider audience outside the industry",
       "signals": [
         "Delivers key messages to broad, mainstream audiences",
-        "Influences people with large audiences to talk about Medium positively",
-        "Drives recognition and adoption of Medium in significant numbers",
+        "Influences people with large audiences to talk about Tegus positively",
+        "Drives recognition and adoption of Tegus in significant numbers",
       ],
       "examples": [
         "Published or interviewed in a mainstream newspaper or website outside tech",
         "Keynoted a conference with international attention",
-        "Represented Medium in national televised media",
+        "Represented Tegus in national televised media",
       ],
     }],
   }
