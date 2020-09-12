@@ -315,12 +315,12 @@ export const tracks: Tracks = {
   "TF": {
     "displayName": "Technical Fluency",
     "category": "B",
-    "description": "Ability to understand, communicate... and contribute to the various technologies and frameworks that are used in the designer’s context.",
+    "description": "Ability to understand, communicate, and contribute to the various technologies and frameworks with engineering partners to enable higher quality experiences.",
     "milestones": [{
       "summary": "Basic understanding of how engineering operates",
       "signals": [
         "Understands and has experience in the engineering lifecycle of a product from ideation to market launch.",
-        "Knows design tokens and understands value of reuse of code",
+        "Understands value of reuse of code",
       ],
       "examples": [
         "Worked within an Agile environment",
@@ -330,34 +330,33 @@ export const tracks: Tracks = {
       "signals": [
         "Understands a basic language / framework (HTML/Bootstrap)",
         "Has learned the why behind technical constraints",
+        "Understands the value of design tokens"
       ],
       "examples": [
         "Has successfully found creative solutions to technical constraints",
+        "Created style guides that have specifications for CSS styles",
+      ],
+    }, {
+      "summary": "Increases design quality by removing technical hurdles",
+      "signals": [
+        "Has the ability anticipate technical constraints and decomposition needs",
+        "Found technical solutions to enable engineers",
+      ],
+      "examples": [
         "Paired with engineers on specific CSS tweaks",
+        "Introduced Lottie to enable animations",
       ],
     }, {
-      "summary": "Improves others' ability to deliver great quality work",
+      "summary": "Individually improves designer to engineer handoff",
       "signals": [
-        "Implements systems that enable better testing",
-        "Gives thoughtful code reviews as a domain expert",
-        "Adds tooling to improve code quality",
+        "Understands the consequences and benefits of specific tech debt",
+        "Create tools to improve design-engineering process",
+        "Educate engineers on practices to improve",
       ],
       "examples": [
-        "Improved PRB to run the same volume of tests faster",
-        "Simplified hermetic test data modification",
-        "Created fixture system for visual quality",
-      ],
-    }, {
-      "summary": "Advocates for and models great quality with proactive actions, and tackles difficult and subtle system issues",
-      "signals": [
-        "Builds systems so as to eliminate entire classes of programmer error",
-        "Focuses the team on quality with regular reminders",
-        "Coordinates Watch priorities and projects",
-      ],
-      "examples": [
-        "Added code coverage reporting to iOS CI pipeline",
-        "Iterated repeatedly to develop Medium's underlines solution",
-        "Defined and oversaw plan for closing Heartbleed vulnerability",
+        "Advocated for tech debt to be paid down",
+        "Built design system components",
+        "Taught a CSS course",
       ],
     }],
   },
@@ -365,9 +364,9 @@ export const tracks: Tracks = {
   "BF": {
     "displayName": "Business Fluency",
     "category": "B",
-    "description": "Challenges the status quo and effects positive organizational change outside of mandated work",
+    "description": "Ability to understand and communicate business outcomes and align customer and business value within the designs.",
     "milestones": [{
-      "summary": "Identifies opportunities for organizational change or product improvements",
+      "summary": "Brings the human perspective to the conversation",
       "signals": [
         "Writes Hatch posts about improvement opportunities",
         "Raises meaningful tensions in tactical meetings",
@@ -379,11 +378,9 @@ export const tracks: Tracks = {
         "Reported a site issue in Github",
       ],
     }, {
-      "summary": "Causes change to positively impact a few individuals or minor improvement to an existing product or service",
+      "summary": "Emerging recognition that it's not all about design, but how design contributes to a broader goal; ",
       "signals": [
-        "Picks bugs off the backlog proactively when blocked elsewhere",
-        "Makes design quality improvements unprompted",
-        "Takes on trust and safety tasks proactively when blocked elsewhere",
+        "Recognizes business goals",
       ],
       "examples": [
         "Advocated on own behalf for a change in role",
@@ -391,10 +388,10 @@ export const tracks: Tracks = {
         "Audited web client performance in Chrome and proposed fixes",
       ],
     }, {
-      "summary": "Causes change to positively impact an entire team or instigates a minor feature or service",
+      "summary": "Ties design success to delivering business value",
       "signals": [
-        "Demonstrates concepts proactively with prototypes",
-        "Fixes complicated bugs outside of regular domain",
+        "Uses understanding of impact and success metrics to focus their team's efforts",
+        "Connects team's efforts with savvy grasp of ecosystem and organizational context",
         "Takes ownership of systems that nobody owns or wants",
       ],
       "examples": [
@@ -403,28 +400,16 @@ export const tracks: Tracks = {
         "Implemented video for Android independently, unprompted",
       ],
     }, {
-      "summary": "Effects change that has a substantial positive impact on the engineering organization or a major product impact",
+      "summary": "Understanding of broader organizational context and goals and drive impact against them",
       "signals": [
-        "Champions and pioneers new technologies to solve new classes of problem",
-        "Exemplifies grit and determination in the face of persistent obstacles",
-        "Instigates major new features, services, or architectures",
+        "Develops and articulates compelling vision for the team",
+        "Begins making real change in how the company approaches its business",
+        "Actions reflect holistic, integrated understanding of organizational context",
       ],
       "examples": [
-        "Created the interviewing rubric and booklet",
-        "Implemented and secured support for native login",
+        "Generated significant business value for the company in terms of new verticals, new sources of revenue, etc.",
+        "Produced design vision artifacts and success in them getting bought in",
         "Migrated medium2 to mono repo and bazel",
-      ],
-    }, {
-      "summary": "Effects change that has a substantial positive impact on the whole company",
-      "signals": [
-        "Creates a new function to solve systemic issues",
-        "Galvanizes the entire company and garners buy in for a new strategy",
-        "Changes complex organizational processes",
-      ],
-      "examples": [
-        "Migrated the organization from Holacracy",
-        "Built Medium Android prototype and convinced execs to fund it",
-        "Convinced leadership and engineering org to move to Medium Lite architecture",
       ],
     }],
   },
