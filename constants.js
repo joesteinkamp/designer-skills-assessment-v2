@@ -522,12 +522,12 @@ export const tracks: Tracks = {
   "Hy": {
     "displayName": "Humility",
     "category": "C",
-    "description": "The willingness to think and feel as your users and colleagues would",
+    "description": "The willingness to be transparent of their work and open to areas of improvement",
     "milestones": [{
       "summary": "Graceful feedback receiver",
       "signals": [
         "Receives feedback well (No ego)",
-        
+        "Shares work early and often and seeks out constructive feedback from their manager, stakeholders, squads and the Product Design team"
       ],
       "examples": [
         "Received feedback that changes their designs",
@@ -549,7 +549,8 @@ export const tracks: Tracks = {
       "summary": "Seek to add value to others",
       "signals": [
         "Provides well structured feedback",
-        "Inludes others within their process at specific moments",
+        "Includes others within their process at specific moments",
+        "Encourages peers to seek out constructive feedback from their manager, stakeholders, squads and the Product Design team",
       ],
       "examples": [
         "Built long-lasting relationships with colleagus",
@@ -560,6 +561,7 @@ export const tracks: Tracks = {
         "Entire process is out in the open and transparent",
         "Gives kind and respectful feedback that builds trust",
         "Gets feedback directly from the source",
+        "solicits feedback from other designers as a tool for teaching different methods and benefits of good critique",
       ],
       "examples": [
         "Established rituals to passively display work-in-progress",
