@@ -122,7 +122,7 @@ export const tracks: Tracks = {
   "VD": {
     "displayName": "Visual Design",
     "category": "A",
-    "description": "Visual Design shapes the product experience through artifacts like illustrations, photography, typography, color and more to improve the usability of products.    ",
+    "description": "Visual Design shapes the product experience through artifacts like illustrations, photography, typography, color, layout and more to improve the usability of products.    ",
     "milestones": [{
       "summary": "Passable: Works effectively within an established visual system, following current best practices",
       "signals": [
