@@ -59,8 +59,8 @@ const emptyState = (): SnowflakeAppState => {
       'TF': 0,
       'BF': 0,
       'Cn': 0,
-      'Gt': 0,
-      'Ey': 0,
+      'GP': 0,
+      'Hy': 0,
       'Mp': 0,
       'Em': 0
     },
@@ -81,8 +81,8 @@ const defaultState = (): SnowflakeAppState => {
       'TF': 3,
       'BF': 4,
       'Cn': 3,
-      'Gt': 4,
-      'Ey': 4,
+      'GP': 4,
+      'Hy': 4,
       'Mp': 3,
       'Em': 1
     },

@@ -3,7 +3,7 @@ import * as d3 from 'd3'
 
 export type TrackId = 'IA' | 'VD' | 'IXD' |
   'SD' | 'R&A' | 'TF' | 'BF' |
-  'Cn' | 'Gt' | 'Ey' |
+  'Cn' | 'GP' | 'Hy' |
   'Mp' | 'Em'
 export type Milestone = 0 | 1 | 2 | 3 | 4
 
@@ -16,8 +16,8 @@ export type MilestoneMap = {
   'TF': Milestone,
   'BF': Milestone,
   'Cn': Track,
-  'Gt': Track,
-  'Ey': Track,
+  'GP': Track,
+  'Hy': Track,
   'Mp': Milestone,
   'Em': Milestone,
 }
@@ -68,8 +68,8 @@ type Tracks = {|
   'TF': Track,
   'BF': Track,
   'Cn': Track,
-  'Gt': Track,
-  'Ey': Track,
+  'GP': Track,
+  'Hy': Track,
   'Mp': Track,
   'Em': Track
 |}
@@ -275,8 +275,7 @@ export const tracks: Tracks = {
         "Relies solely on qualitative data",
       ],
       "examples": [
-        "Conducted usability tests",
-        "Conducted user interviews",
+        "Conducted the basics of user research methods - intereviews and usability tests",
       ],
     }, {
       "summary": "Expands quantative data from others and leverages more qualitative methodologies",
@@ -300,14 +299,17 @@ export const tracks: Tracks = {
         "Directed team response effectively during outages",
         "Conducted A/B testing",
         "Advocated for higher designer quality with evidence to convince others",
+        "Presented research insights in a digestible story at different levels of depth depending on the audience",
       ],
     }, {
       "summary": "Industry leader in effectively measuring the quality of all an organization's user experiences",
       "signals": [
         "Develops strategies to improve key experience indicators",
+        "Disseminating knowledge and alignment are top priorities",
       ],
       "examples": [
         "Presented and sold leadership into key experience indicators",
+        "Coordinated centralizing user research in to a database",
       ],
     }],
   },
@@ -366,16 +368,12 @@ export const tracks: Tracks = {
     "category": "B",
     "description": "Ability to understand and communicate business outcomes and align customer and business value within the designs.",
     "milestones": [{
-      "summary": "Brings the human perspective to the conversation",
+      "summary": "Brings the human perspective to the conversation while fulfilling business requests",
       "signals": [
-        "Writes Hatch posts about improvement opportunities",
-        "Raises meaningful tensions in tactical meetings",
-        "Asks leadership team probing questions at FAM",
+        "Advocates for the user to business",
       ],
       "examples": [
-        "Wrote about problems with TTR on Hatch",
-        "Wrote about content policy problems on Hatch",
-        "Reported a site issue in Github",
+        "Defined success as completing the business needs or requirements",
       ],
     }, {
       "summary": "Emerging recognition that it's not all about design, but how design contributes to a broader goal; ",
@@ -383,21 +381,19 @@ export const tracks: Tracks = {
         "Recognizes business goals",
       ],
       "examples": [
-        "Advocated on own behalf for a change in role",
-        "Implemented flow typing for promises",
-        "Audited web client performance in Chrome and proposed fixes",
+        "Defined success metrics for work",
+        "Proven outcomes of work",
       ],
     }, {
       "summary": "Ties design success to delivering business value",
       "signals": [
         "Uses understanding of impact and success metrics to focus their team's efforts",
         "Connects team's efforts with savvy grasp of ecosystem and organizational context",
-        "Takes ownership of systems that nobody owns or wants",
       ],
       "examples": [
-        "Defined style guide to resolve style arguments",
-        "Proposed and implemented at-mentions prototype",
-        "Implemented video for Android independently, unprompted",
+        "Shared Design's business value with business leaders",
+        "Demonstrated a deep understanding the design work impacts the business",
+        "Effectively prioritized value over \"perfect\" designs when under constraints",
       ],
     }, {
       "summary": "Understanding of broader organizational context and goals and drive impact against them",
@@ -409,7 +405,8 @@ export const tracks: Tracks = {
       "examples": [
         "Generated significant business value for the company in terms of new verticals, new sources of revenue, etc.",
         "Produced design vision artifacts and success in them getting bought in",
-        "Migrated medium2 to mono repo and bazel",
+        "Ran workshop with leadership to align on business goals",
+        "Defined strategy in business value Design can bring",
       ],
     }],
   },
@@ -417,7 +414,7 @@ export const tracks: Tracks = {
   "Cn": {
     "displayName": "Communication",
     "category": "C",
-    "description": "Provides excellent storytelling of design decision and communicates clearly.",
+    "description": "Provides excellent storytelling of design decision, communicates clearly, and collaborates with others effectively.",
     "milestones": [{
       "summary": "Developing skill for communicating rationale to team members",
       "signals": [
@@ -426,33 +423,32 @@ export const tracks: Tracks = {
         "Comfortable speaking with peers",
       ],
       "examples": [
-        "Updates design tasks based on progress",
-        "Presents designs within a design critique",
-        "Provide feedback to other designers",
-      ],
-    }, {
-      "summary": "Communicates with the wider team appropriately, focusing on timeliness and good quality conversations",
-      "signals": [
-        "Ensure a group member has an appropriate role on their team",
-        "Offers effective career advice to group members, without being prescriptive",
-        "Creates space for people to talk through challenges",
-      ],
-      "examples": [
-        "Set up and attended regular, constructive 1:1s",
-        "Provided coaching on how to have difficult conversations",
-        "Taught group members the GROW model",
+        "Updated design tasks based on progress",
+        "Presented designs within a design critique",
+        "Provided feedback to other designers",
       ],
     }, {
       "summary": "Confidently communicates decision-making rationale to team members",
       "signals": [
-        "Discusses paths, and creates plans for personal and professional growth",
-        "Advocates to align people with appropriate roles within organization",
-        "Works with team leads to elevate emerging leaders",
+        "Creates space for people to talk through challenges",
+        "Comfortable working with and including immediate team within design process",
       ],
       "examples": [
-        "Reviewed individual group member progression every 6 weeks",
-        "Suggested appropriate group member for Tech Lead position",
-        "Helped prepare for a cross-functional team meeting",
+        "Presented rough design concepts to immediate team for feedback",
+        "Hosted workshops with immediate team",
+        "Contributed to cross-organization team meeting",
+      ],
+    }, {
+      "summary": "Communicates with the wider product org team appropriately",
+      "signals": [
+        "Comfortable working with and including product org leaders within design process",
+        "Establish long-term relationships",
+        "Handles disagreement with grace and action",
+      ],
+      "examples": [
+        "Presented design visions or plans to cross-functional teams",
+        "Helped prepare for a cross-organization team meeting",
+        "Hosted workshops with product organization",
       ],
     }, {
       "summary": "Storytelling and persuasion techniques build trust at the highest-level",
@@ -460,145 +456,114 @@ export const tracks: Tracks = {
         "Demonstrates confidence and charisma",
         "Comfortable communicating at all levels of the organization",
         "Designs and delivers plans to execs, the board, and outside investors",
+        "Uses storytelling and persuasion to connect strategy and vision with day-to-day practicality,"
       ],
       "examples": [
-        "Presented design visions or plans to cross-functional teams",
-        "Presented to the board about key experience metrics and business opportunities from CX improvements",
+        "Presented to leadership about key experience metrics and business opportunities from CX improvements",
         "Aligned the entire organization around design vision",
+        "Hosted workshops with leadership",
       ],
     }],
   },
 
-  "Gt": {
-    "displayName": "Grit",
+  "GP": {
+    "displayName": "Grit & Passion",
     "category": "C",
-    "description": "Supports the emotional well-being of group members in difficult times, and celebrates their successes",
+    "description": "The drive to self start, be curious, and make progress through individual effort",
     "milestones": [{
-      "summary": "Uses tools and processes to help ensure colleagues are healthy and happy",
+      "summary": "Strong desire to learn diverse knowledge, techniques and topics out of curiosity and can seek out help and feedback when needed",
       "signals": [
-        "Keeps confidences unless legally or morally obliged to do otherwise",
-        "Applies the reasonable person principle to others",
-        "Avoids blame and focuses on positive change",
+        "Acts on desire to learn and self educates",
+        "Finds passion at work to improve their own work",
       ],
       "examples": [
-        "Ensured group members were taking enough vacation",
-        "Put themself in another's shoes to understand their perspective",
-        "Checked in with colleague showing signs of burnout",
+        "Created side projects that expand their design skills",
+        "Took classes or other education material",
       ],
     }, {
-      "summary": "Creates a positive, supportive, engaging team environment for group members",
+      "summary": "Causes change to positively impact an entire team or instigates a minor feature or service",
       "signals": [
-        "Sheds light on other experiences to build empathy and compassion",
-        "Validates ongoing work and sustains motivation",
+        "Finds passion at work to improve their team's work",
         "Proposes solutions when teams get bogged down or lose momentum",
+        "Embrace challenges and persist in the face of setbacks while seeing effort as the path to improvement",
       ],
       "examples": [
-        "Coordinated a small celebration for a project launch",
-        "Connected tedious A|B testing project with overall company goals",
-        "Noted a team without a recent win and suggested some easy quick wins",
+        "Created tools or systems to increase efficiency",
+        "Advocated better design outcomes against opposition",
       ],
     }, {
-      "summary": "Manages expectations across peers, leads in the org, promotes calm, and prevents consensus building",
+      "summary": "Effects change that has a substantial positive impact on the product organization or a major product impact",
       "signals": [
-        "Trains group members to separate stimulus from response",
-        "Maintains a pulse on individual and team morale",
-        "Helps group members approach problems with curiosity",
+        "Finds passion at work to improve their organization's work",
+        "Consistently pushes design work further to impact stategy",
+        "Champions and pioneers new technologies to solve new classes of problems",
+        "Takes ownership of systems that nobody owns or wants",
       ],
       "examples": [
-        "Completed training on transference and counter transference",
-        "Completed training on compromise and negotiation techniques",
-        "Reframed a problem as a challenge, instead of a barrier, when appropriate",
+        "Designed concepts that went well beyond the expected and got them on roadmap",
+        "Created operational processes for the whole team to improve (Ex. Research plan template)",
+        "Took over leading a design system that nobody owned",
       ],
     }, {
-      "summary": "Advocates for the needs of teams and group members, and proactively works to calm the organization",
+      "summary": "Effects change that has a substantial positive impact on the whole company",
       "signals": [
-        "Ensures team environments are safe and inclusive, proactively",
-        "Grounds group member anxieties in reality",
-        "Tracks team retention actively and proposes solutions to strengthen it",
+        "Takes ownership of problems that are both complex and large in scale",
+        "Plays a key role in supporting and challenging leaders",
+        "Takes a leading role, company wide",
       ],
       "examples": [
-        "Relieved org tension around product direction by providing extra context",
-        "Encouraged group members to focus on what they can control",
-        "Guided people through complex organizational change",
-      ],
-    }, {
-      "summary": "Manages narratives, channels negativity into inspiration and motivation, and protects the entire team",
-      "signals": [
-        "Recognizes and points out narratives when appropriate",
-        "Works to reshape narratives from victimization to ownership",
-        "Increases the psychological safety of the entire team",
-      ],
-      "examples": [
-        "Converted group member from a problem haver to a problem solver",
-        "Challenged false narrative and redirected to compassion and empathy",
-        "Cultivated and championed a culture of empathy within the entire team",
+        "Led a significant change such as introducing a new way of working which will affect a large number of people",
+        "Pioneered and convinced leadership of design vision that wasn't asked for",
+        
       ],
     }],
   },
 
-  "Ey": {
-    "displayName": "Empathy",
+  "Hy": {
+    "displayName": "Humility",
     "category": "C",
-    "description": "Inspires day to day excellence, maximises potential and effectively resolves performance issues with compassion",
+    "description": "The willingness to think and feel as your users and colleagues would",
     "milestones": [{
-      "summary": "Helps individuals identify blockers and helps them identify next steps for resolution",
+      "summary": "Graceful feedback receiver",
       "signals": [
-        "Notices when someone is stuck and reaches out",
-        "Helps others break down problems into feasible, tangible next steps",
-        "Talks through problems non-judgmentally",
+        "Receives feedback well (No ego)",
+        
       ],
       "examples": [
-        "Completed training on diagnosing problems",
-        "Unblocked a group member",
-        "Reinforces and affirms positive feedback for good work",
+        "Received feedback that changes their designs",
+        "Positive attitude displayed when receiving feedback",
       ],
     }, {
-      "summary": "Helps individuals resolve difficult performance issues, with insight, compassion, and skill",
+      "summary": "Feedback seeker",
       "signals": [
-        "Gathers context outside the immediate problem",
-        "Recognizes issues within local environment and suggests change",
-        "Works to encourage ownership of actions and responsibilities",
+        "Accepting of new and different ideas and approaches",
+        "Actively seeks feedback",
+        "Always looking to improve",
+        "Acknowledges gaps in skills and mistakes",
       ],
       "examples": [
-        "Completed training on decision making",
-        "Convinced a group member to solve a problem directly, rather than doing it for them",
-        "Gave honest feedback about poor performance, with compassion",
+        "Handled challenging feedback from stakeholders",
+        "Discussed openly about strengthes and weaknesses",
       ],
     }, {
-      "summary": "Intervenes in long-standing performance issues with targeted behavior change or performance plans",
+      "summary": "Seek to add value to others",
       "signals": [
-        "Aggregates signals of poor performance and creates process for improvement",
-        "Investigates motivation and externalities for consistent poor performance",
-        "Puts together comprehensive, achievable performance plans",
+        "Provides well structured feedback",
+        "Inludes others within their process at specific moments",
       ],
       "examples": [
-        "Worked with group member to address persistent communication failures",
-        "Arranged a transfer to another team, resulting in improved performance",
-        "Managed group member closely to maximise chances of PIP success",
+        "Built long-lasting relationships with colleagus",
       ],
     }, {
-      "summary": "Mediates escalated situations, empowers underperforming teams, and resolves conflict",
+      "summary": "Cultural steward and leader in transparency and feedback",
       "signals": [
-        "Recognizes heightened situations and toxic or aggressive interactions",
-        "Inserts themself into conflict where appropriate to calm and mediate",
-        "Encourages open dialog and builds trust between parties in conflict",
+        "Entire process is out in the open and transparent",
+        "Gives kind and respectful feedback that builds trust",
+        "Gets feedback directly from the source",
       ],
       "examples": [
-        "Empowered a team to drive forward amidst uncertainty",
-        "Protected team from externalities so they could focus on goals",
-        "Mediated sit-down between team members to address tension",
-      ],
-    }, {
-      "summary": "Resolves complex organizational dysfunction, or persistent conflict at senior levels",
-      "signals": [
-        "Takes control of dysfunctional teams to organise chaos",
-        "Repairs broken team dynamics and builds harmony",
-        "Presides over a well-oiled team of teams",
-      ],
-      "examples": [
-        "Turned around the performance of a problematic team",
-        "De-escalated serious tensions between teams",
-        "Rebuilt trust between senior team leads",
+        "Established rituals to passively display work-in-progress",
+        "Broke down silos with partnerships made",
       ],
     }],
   },
@@ -649,6 +614,10 @@ export const tracks: Tracks = {
         "Defines an entire curriculum for a discipline",
         "Draws positive attention to well-modeled mentor and teaching behaviours",
         "Creates brown bag series and lines up speakers",
+        "Ensure a group member has an appropriate role on their team",
+        "Offers effective career advice to group members, without being prescriptive",
+        "Discusses paths, and creates plans for personal and professional growth",
+        "Advocates to align people with appropriate roles within organization",
       ],
       "examples": [
         "Created and lead Medium's Women in Eng group",
@@ -725,14 +694,16 @@ export const tracks: Tracks = {
     }, {
       "summary": "Introduces Medium in a positive light to a wider audience outside the industry",
       "signals": [
-        "Delivers key messages to broad, mainstream audiences",
+        "Delivers key messages to leadership, mainstream audiences",
         "Influences people with large audiences to talk about Medium positively",
-        "Drives recognition and adoption of Medium in significant numbers",
+        "Drives recognition of Design organization",
+        "Share your knowledge (continuously and consistently) to the outside world (conferences, workshops, meetups, etc.).",
+        "Attracts and recruits excellent candidates",
       ],
       "examples": [
         "Published or interviewed in a mainstream newspaper or website outside tech",
         "Keynoted a conference with international attention",
-        "Represented Medium in national televised media",
+        "Participate in architecting community/industry initiatives."
       ],
     }],
   }
