@@ -225,7 +225,7 @@ export const tracks: Tracks = {
   "SD": {
     "displayName": "Service Design",
     "category": "A",
-    "description": "Service Design shapes the product experience through thoughtful holistic thinking to consider how the experience is a sum of many pieces.",
+    "description": "Service Design shapes the product experience through thoughtful holistic and system thinking to consider how the experience is a sum of many pieces.",
     "milestones": [{
       "summary": "Focuses on one user's specific journey",
       "signals": [
