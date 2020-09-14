@@ -599,16 +599,14 @@ export const tracks: Tracks = {
         "Lead from behind to support someone new to a leadership role",
       ],
     }, {
-      "summary": "Teaches small groups of engineers and contributes to Medium's shared knowledge base",
+      "summary": "Teaches small groups of designers and contributes to the company's shared knowledge base",
       "signals": [
         "Avoids siloing information when it can be usefully shared with others",
         "Works to increase the bus factor of systems",
         "Finds tools that work best for a team member's personality",
       ],
       "examples": [
-        "Gave a brown bag presentation on payments",
-        "Wrote Hatch post on avoiding RDS backfill issues",
-        "Wrote Medium-U content module",
+        "Gave an educational presentation",
       ],
     }, {
       "summary": "Encourages people to mentor each other, and creates ways for them to do so",
@@ -622,9 +620,9 @@ export const tracks: Tracks = {
         "Advocates to align people with appropriate roles within organization",
       ],
       "examples": [
-        "Created and lead Medium's Women in Eng group",
-        "Organized an Eng All Hands with an outside speaker",
-        "Designed and taught web client guild curriculum",
+        "Created and lead a group for a cause or topic",
+        "Organized an Design team meeting with an outside speaker",
+        "Designed and taught education curriculum",
       ],
     }, {
       "summary": "Instills and promotes a culture of learning and development within the team",
@@ -636,7 +634,7 @@ export const tracks: Tracks = {
       "examples": [
         "Instituted the professional education budget for engineers",
         "Mentored mentors",
-        "Started the eng advisor program and lined up external mentors",
+        "Started an advisor program and lined up external mentors",
       ],
     }],
   },
@@ -644,68 +642,53 @@ export const tracks: Tracks = {
   "Em": {
     "displayName": "Evangelism",
     "category": "D",
-    "description": "Promotes Design at Tegus internally and externally and establishes it as an attractive and thoughtful place to work",
+    "description": "Promotes Design internally and externally to advocate and establish it as an attractive and thoughtful place to work for Design",
     "milestones": [{
-      "summary": "Represents Medium well externally, and influences individuals positively",
+      "summary": "Represents Design well externally, and influences individuals positively",
       "signals": [
         "Shares personal and organizational successes with their network",
-        "Attends Medium-hosted events and talks with guests",
+        "Attends company hosted events and talks with guests",
         "Communicates genuine and honest excitement about their work externally",
       ],
       "examples": [
-        "Shared a Medium product launch post on Facebook",
+        "Shared a product launch post on Facebook",
         "Acted as a guide for a non-friend visitor to the office",
         "Supported PR efforts by giving a quote or having a photo taken",
       ],
     }, {
       "summary": "Participates more centrally in small events, and takes simple actions that positively influence groups of people",
       "signals": [
-        "Takes meaningful action to introduce people to Medium",
-        "Joined public Slack group and represented Medium appropriately, and well",
-        "Organizes positive small- or medium-sized events that bring people to Medium",
+        "Takes meaningful action to introduce people to their company",
+        "Joined public Slack group and represented their company appropriately, and well",
+        "Organizes positive small- or medium-sized events that bring people to their company",
       ],
       "examples": [
         "Volunteered as a helper for CODE2040 writing workshop",
         "Organized a short tour of the office by college students",
-        "Talked at a Women Who Code event hosted at Medium",
+        "Talked at an event hosted at their company",
       ],
     }, {
-      "summary": "Works hard to positively influence large groups of people on their views of Medium",
+      "summary": "Works hard to positively influence large groups of people on their views of their company",
       "signals": [
         "Mentors or participates in a high visibility way in an external organization",
         "Builds fruitful partnerships with external organizations",
-        "Writes blog posts about Medium that receive moderate traffic",
+        "Writes blog posts that receive moderate traffic",
       ],
       "examples": [
-        "Represented Medium on a panel at a conference of industry experts",
+        "Represented their company on a panel at a conference of industry experts",
         "Established close ties with Creative Commons",
         "Built a durable, long-standing relationship with Code2040",
       ],
     }, {
-      "summary": "Establishes Medium as an great, innovative company and workplace to the whole industry",
+      "summary": "Establishes their company as an great, innovative company and workplace to the whole industry",
       "signals": [
         "Establishes themself as an industry thought leader who attracts talent",
-        "Publishes material about Medium's organizational or technical innovations",
-        "Leverages significant following to evangelise Medium",
+        "Publishes material about organizational or Design innovations",
+        "Leverages significant following to evangelise their company's Design org",
       ],
       "examples": [
-        "Published a paper on Medium technology in a peer-reviewed journal",
-        "Authored joint-press release with EFF on DNT",
-        "Published “Why Content Editable Is Terrible” on the Medium engineering blog",
-      ],
-    }, {
-      "summary": "Introduces Medium in a positive light to a wider audience outside the industry",
-      "signals": [
-        "Delivers key messages to leadership, mainstream audiences",
-        "Influences people with large audiences to talk about Medium positively",
-        "Drives recognition of Design organization",
-        "Share your knowledge (continuously and consistently) to the outside world (conferences, workshops, meetups, etc.).",
-        "Attracts and recruits excellent candidates",
-      ],
-      "examples": [
-        "Published or interviewed in a mainstream newspaper or website outside tech",
-        "Keynoted a conference with international attention",
-        "Participate in architecting community/industry initiatives."
+        "Published a paper on Design in a peer-reviewed journal",
+        "Published an article on their company's blog",
       ],
     }],
   }
