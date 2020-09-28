@@ -36,15 +36,15 @@ export const milestoneToPoints = (milestone: Milestone): number => {
 }
 
 export const pointsToLevels = {
-  '0': '0',
-  '12': '1',
-  '18': '2',
-  '24': '3',
-  '30': '4',
-  '36': '5',
-  '41': '6',
-  '46': '7',
+  '0': '1',
+  '20': '2',
+  '26': '3',
+  '35': '4',
+  '40': '5',
+  '46': '6',
+  '52': '7',
 }
+
 
 export const maxLevel = 56
 
