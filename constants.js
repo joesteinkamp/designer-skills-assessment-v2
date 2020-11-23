@@ -78,7 +78,7 @@ export const tracks: Tracks = {
   "IA": {
     "displayName": "Information Architecture",
     "category": "A",
-    "description": "Develops expertise in information architecture",
+    "description": "The structural design of information from organizing, labelling, search, and navigation systems.",
     "milestones": [{
       "summary": "Passable: Works effectively within established information architectures, following current best practices",
       "signals": [
@@ -107,7 +107,7 @@ export const tracks: Tracks = {
         "Add new levels in the architecture",
       ],
     }, {
-      "summary": "Excellent: Designs complex, reusable architectures that pioneer best practices",
+      "summary": "Master: Designs complex, reusable architectures that pioneer best practices",
       "signals": [
         "Pioneers new architecture and taxonomies",
         "Strategy to transition from old patterns to new patterns",
@@ -122,7 +122,7 @@ export const tracks: Tracks = {
   "VD": {
     "displayName": "Visual Design",
     "category": "A",
-    "description": "Visual Design shapes the product experience through artifacts like illustrations, photography, typography, color, layout and more to improve the usability of products.    ",
+    "description": "Shaping the product experience through artifacts like illustrations, photography, typography, color, layout, hierarchy, and more to improve the usability and delight of products.",
     "milestones": [{
       "summary": "Passable: Works effectively within an established visual system, following current best practices",
       "signals": [
@@ -156,7 +156,7 @@ export const tracks: Tracks = {
         "Presented many visual pitches to leadership",
       ],
     }, {
-      "summary": "Excellent: Is an industry-leading expert in art direction",
+      "summary": "Master: Is an industry-leading expert in art direction",
       "signals": [
         "Leads visual direction at an organizational level",
         "Defines a long-term vision",
@@ -172,9 +172,9 @@ export const tracks: Tracks = {
   "IXD": {
     "displayName": "Interaction Design",
     "category": "A",
-    "description": "Interaction Design is the design of the interaction between the user and the product.",
+    "description": "The dialogue between a person and a product, system, or service focused on the physical (ease/speed of use) and emotional (delight).",
     "milestones": [{
-      "summary": "Passable: Only leverages current best practices",
+      "summary": "Passable: Leverages current industry best practices",
       "signals": [
         "Know and use of Design System",
         "Explore best practices for common design problems; solutions are solid, though not novel",
@@ -197,7 +197,7 @@ export const tracks: Tracks = {
         "Solved specific product capabilities (e.g., Checkout process)",
       ],
     }, {
-      "summary": "Proficient: Generates new business successes from contextually appropriate interactions",
+      "summary": "Proficient: Enable business successes from contextually appropriate interactions",
       "signals": [
         "Begins going beyond best practices, and starts uncovering novel, unexpected, but still workable solutions",
         "Clarifies success metrics and ties efforts toward delivering business value",
@@ -208,12 +208,13 @@ export const tracks: Tracks = {
         "Led the solution of a product area; connects that to broader product vision (e.g, product page and purchase experience)",
       ],
     }, {
-      "summary": "Excellent: Recognized industry expert in Interaction Design.",
+      "summary": "Master: Pioneers new and novel interactions that directly generate business success",
       "signals": [
         "Frames and solves hard problems",
         "Presents company as an industry leader in design",
         "Working with partners and stakeholders, begins making real change in how the company approaches its business",
         "Articulates vision for the team that excites and inspires leaders and partner",
+        "Recognized industry expert in Interaction Design",
       ],
       "examples": [
         "Driven innovative efforts that uncovered new value with new kinds of experiences",
@@ -225,7 +226,7 @@ export const tracks: Tracks = {
   "SD": {
     "displayName": "Service Design",
     "category": "A",
-    "description": "Service Design shapes the product experience through thoughtful holistic and system thinking to consider how the experience is a sum of many pieces.",
+    "description": "Shaping the product experience through thoughtful holistic and system thinking to consider how the experience is a sum of many pieces from aspects the person directly interacts with as well as the behind the scenes systems and people.",
     "milestones": [{
       "summary": "Focuses on one user's specific journey",
       "signals": [
@@ -270,7 +271,7 @@ export const tracks: Tracks = {
     "category": "A",
     "description": "Effectively uses quantitative and qualitative data to make informed design decisions.",
     "milestones": [{
-      "summary": "Has a basic understanding of common user research techniques",
+      "summary": "Passable: Has a basic understanding of common user research techniques",
       "signals": [
         "Relies solely on qualitative data",
       ],
@@ -278,7 +279,7 @@ export const tracks: Tracks = {
         "Conducted the basics of user research methods - intereviews and usability tests",
       ],
     }, {
-      "summary": "Expands quantative data from others and leverages more qualitative methodologies",
+      "summary": "Capable: Leverages quantative data from others and begins to use more qualitative methodologies",
       "signals": [
         "Works with others to review existing quantitative data",
         "Begins to speak towards outcomes over output",
@@ -289,7 +290,7 @@ export const tracks: Tracks = {
         "Defined and achieved success metrics within existing data systems",
       ],
     }, {
-      "summary": "Complete focus on results",
+      "summary": "Proficient: Effectively analyzes quantitative data and continues to lead qualitative data methodologies",
       "signals": [
         "Maps out how to collect future quantitative data to evaluate the quality of the UX",
         "Is a user of quantitative data tools",
@@ -302,7 +303,7 @@ export const tracks: Tracks = {
         "Presented research insights in a digestible story at different levels of depth depending on the audience",
       ],
     }, {
-      "summary": "Industry leader in effectively measuring the quality of all an organization's user experiences",
+      "summary": "Master: Effectively measures the quality of all a holistic user experience",
       "signals": [
         "Develops strategies to improve key experience indicators",
         "Disseminating knowledge and alignment are top priorities",
@@ -376,7 +377,7 @@ export const tracks: Tracks = {
         "Defined success as completing the business needs or requirements",
       ],
     }, {
-      "summary": "Emerging recognition that it's not all about design, but how design contributes to a broader goal; ",
+      "summary": "Emerging recognition that it's not all about design, but how design contributes to a broader goal",
       "signals": [
         "Recognizes business goals",
       ],
@@ -469,7 +470,7 @@ export const tracks: Tracks = {
   "GP": {
     "displayName": "Grit & Passion",
     "category": "C",
-    "description": "The drive to self start, be curious, and make progress through individual effort",
+    "description": "The drive to self start, be curious, and make progress through individual effort.",
     "milestones": [{
       "summary": "Strong desire to learn diverse knowledge, techniques and topics out of curiosity and can seek out help and feedback when needed",
       "signals": [
@@ -522,7 +523,7 @@ export const tracks: Tracks = {
   "Hy": {
     "displayName": "Humility",
     "category": "C",
-    "description": "The willingness to be transparent of their work and open to areas of improvement",
+    "description": "The willingness to be transparent of their work and open to areas of improvement.",
     "milestones": [{
       "summary": "Graceful feedback receiver",
       "signals": [
@@ -573,7 +574,7 @@ export const tracks: Tracks = {
   "Mp": {
     "displayName": "Mentorship",
     "category": "D",
-    "description": "Provides support to colleagues, spreads knowledge, and develops the team outside formal reporting structures",
+    "description": "Provides support to colleagues, spreads knowledge, and develops the team outside formal reporting structures.",
     "milestones": [{
       "summary": "Informally mentors individuals in an ad-hoc way, supports new hires, and conveys institutional knowledge",
       "signals": [
@@ -642,7 +643,7 @@ export const tracks: Tracks = {
   "Em": {
     "displayName": "Evangelism",
     "category": "D",
-    "description": "Promotes Design internally and externally to advocate and establish it as an attractive and thoughtful place to work for Design",
+    "description": "Promotes Design internally and externally to advocate and establish it as an attractive and thoughtful place to work for Design.",
     "milestones": [{
       "summary": "Represents Design well externally, and influences individuals positively",
       "signals": [
