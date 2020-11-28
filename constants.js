@@ -340,7 +340,7 @@ export const tracks: Tracks = {
         "Created style guides that have specifications for CSS styles",
       ],
     }, {
-      "summary": "Increases design quality by removing technical hurdles",
+      "summary": "Strong advocate for designer and engineer partnership",
       "signals": [
         "Has the ability anticipate technical constraints and decomposition needs",
         "Found technical solutions to enable engineers",
