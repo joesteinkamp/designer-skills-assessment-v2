@@ -547,7 +547,7 @@ export const tracks: Tracks = {
         "Discussed openly about strengthes and weaknesses",
       ],
     }, {
-      "summary": "Seek to add value to others",
+      "summary": "Seek to add value to others & acute awareness of their gaps",
       "signals": [
         "Provides well structured feedback",
         "Includes others within their process at specific moments",
@@ -557,7 +557,7 @@ export const tracks: Tracks = {
         "Built long-lasting relationships with colleagus",
       ],
     }, {
-      "summary": "Cultural steward and leader in transparency and feedback",
+      "summary": "Cultural steward and leader in transparency, feedback, and candid expression of their gaps",
       "signals": [
         "Entire process is out in the open and transparent",
         "Gives kind and respectful feedback that builds trust",
