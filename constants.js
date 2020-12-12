@@ -643,7 +643,7 @@ export const tracks: Tracks = {
   "Em": {
     "displayName": "Evangelism",
     "category": "D",
-    "description": "Promotes Design internally and externally to advocate and establish it as an attractive and thoughtful place to work for Design.",
+    "description": "Promotes Design org, thinking, and quality internally and externally to advocate and establish it as an attractive and thoughtful place to work for Design.",
     "milestones": [{
       "summary": "Represents Design well externally, and influences individuals positively",
       "signals": [
