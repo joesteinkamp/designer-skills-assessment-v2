@@ -579,7 +579,7 @@ export const tracks: Tracks = {
       "summary": "Informally mentors individuals in an ad-hoc way, supports new hires, and conveys institutional knowledge",
       "signals": [
         "Makes themself available for informal support and advice",
-        "Acts as sounding board for peers and more junior members",
+        "Acts as sounding board for peers and more inexperienced members",
         "Provides sound advice when asked",
       ],
       "examples": [
@@ -725,7 +725,7 @@ export const categoryColorScale = d3.scaleOrdinal()
   .range(['#00abc2', '#428af6', '#e1439f', '#e54552'])
 
 export const titles = [
-  {label: 'Junior Product Designer', minPoints: 0, maxPoints: 19},
+  {label: 'Associate Product Designer', minPoints: 0, maxPoints: 19},
   {label: 'Product Designer I', minPoints: 20, maxPoints: 25},
   {label: 'Product Designer II', minPoints: 26, maxPoints: 34},
   {label: 'Senior Product Designer', minPoints: 35, maxPoints: 39},
